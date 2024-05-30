@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+#Navbar ul:hover {
+    color:black;
+    transition: ease-in-out 0.3s;
+}
+
+#Navbar ul { 
+    transition: ease-in-out 0.3s; 
+}
+
+.img { 
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* h1 {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+    letter-spacing: -3px;
+    line-height: 9dvb;
+} */
+
+h2 {
+    /* font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
+    font-weight: 410;
+    letter-spacing: 0px;
+    font-size: 1.4rem;
+    display:block; */
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0px;
+  }
+/* 
+  h3 {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vw;
+    letter-spacing: -3px;
+    line-height: 110%;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 
+h5 {
+    font-family: "Spectral", serif;
+} */
+
+
+h1 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    color: #2B2C2C;
+    line-height: 1;
+}
+
+h3 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: #2B2C2C;
+    margin: 0;
+}
+
+h5 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #A1A1A1;
+}
+
+ul {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1vw;
+    font-weight: 300;
+    font-style: normal;
+    color: #A1A1A1;
+}
+
+span {
+    font-family: "Fira Sans", sans-serif;
+    font-size:1.5vw;
+    font-weight: 400;
+    font-style: normal;
+    color: #2B2C2C;
+}
+
+
+/*border-2 border-black w-fit h-fit px-3 py-2 m-auto hover:bg-black hover:text-white hover:ease-in-out duration-300"*/
+button {
+   
+  
+    color: white;
+    border: 1px solid white;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: auto;
+    /* transition: ease-in-out 0.3s; */
+}
+
+button:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: ease-in-out 0.2s;
+}
+
+button#project {
+    color: inherit;
+    border: solid inherit
+}
+
+/* button:hover {
+    background-color: black;
+    color:white;
+    transition: ease-in-out 0.3s;
+} */
+/* 
+button:hover {
+    background-color: none;
+} */
+
+
+/* Bootstrap overrides */
+
+
+/* .bootstrap-override {
+    border-radius: none;
+    border: 1px solid red;
+} */
+
+button.dropdown-toggle.btn.btn-primary {
+    background-color: white;
+
+    border: none;
+    padding: 0;
+    margin:0;
+    vertical-align: top;
+}
+
+.e-caret-hide.dropdown-menu.show{
+    width: fit-content;
+}
+
+.dropdown-item {
+    width: fit-content;
+}
+
+.dropdown-item:active {
+    background: none;
+}
+
+.no-arrow::after {
+    display: none !important;
+  }
+
+
+/* .btn-primary {
+    background-color: red;
+    display: none;
+} */
+
+
+#bootstrap-overrides h1 { /* 100+1=101 priority score, yay! */
+    line-height: 1;
+    color: inherit;
+  }
