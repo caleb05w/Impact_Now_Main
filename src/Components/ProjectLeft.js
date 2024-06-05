@@ -24,7 +24,7 @@ function ProjectLeft({title, description, image, description2, button, button2, 
             <img className='z-10 w-[110%] h-[110%] object-cover' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={image} ></img>
         </div>
     ) :  
-    <div className='grid-cols-2 grid w-full max-h-lvh overflow-hidden'>
+    <div className='bg-white grid-cols-2 grid w-full max-h-lvh overflow-hidden'>
         <div className='m-16 gap-10 grid text-center'>
             <h1 className > {title} </h1>
             

@@ -33,7 +33,11 @@ function Home() {
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
       <div className='text-center mx-25 my-20 w-2/3 z-20'>
-        <div className='flex justify-center'> <img className="h-32, w-32" src={logo}></img> </div>
+        <div className='flex justify-center'> 
+          <div className='h-[15%] w-[15%] border-black border-2'>
+          <img className="w-full h-full object-cover" src={logo}></img>
+          </div>
+         </div>
         <div className='w-2/3 mx-auto text-center z-10'>
           <h1 className='mt-5 z-10 text-white'> Impact N.O.W </h1>
           <h5 className=' mt-10 z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
