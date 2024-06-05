@@ -191,6 +191,23 @@ button#project {
     transition: ease-in-out 0.3s;
 }
 
+.arrowButton {
+    color: white;
+    border: white;
+    transition: ease-in-out 0.3s;
+}
+
+.arrowButton:hover {
+    color: #718096;
+    border: #718096;
+    transition: ease-in-out 0.3s;
+}
+
+#white {
+    color: white;
+    border: white;
+}
+
 /* button:hover {
     background-color: black;
     color:white;

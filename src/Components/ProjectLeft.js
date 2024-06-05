@@ -34,7 +34,7 @@ function ProjectLeft({title, description, image, description2, button, button2, 
                 <span className='h-max-lvh overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> { description} </span>
                 </div>
 
-            <button className='projectButtonTeam' onClick={handleButtonClick}>{ button }</button>
+            <button className='projectButtonTeam border-2' onClick={handleButtonClick}>{ button }</button>
         </div>
         <img className='object-cover h-full w-full z-10' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={ image } ></img>
     </div>;

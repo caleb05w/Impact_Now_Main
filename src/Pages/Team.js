@@ -94,11 +94,11 @@ function Team() {
             <div className='text-center pt-10'>
                 <h1> Meet the Team </h1>
                 <h5 className='mt-4'> Some body text about the team goes here.</h5>
-
+{/* 
                 <div className="grid grid-cols-2 mt-20 w-[50%] mx-auto">
                     <button className='projectButtonTeam'>About Us</button>
                     <button className='projectButtonTeam'>Get Involved</button>
-                </div> 
+                </div>  */}
             </div>
 
 

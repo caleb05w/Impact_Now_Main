@@ -14,15 +14,15 @@ function CRPage() {
                     <div className='w-2/3 h-full'>
                         <h4 className='my-5 text-white'>Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew. </h4>
 
-                        <button id='team' className='flex flex-row w-fit mx-0 px-0 bg-transparent group border-none hover:border-none;'>
+                        <button id='team' className='group flex flex-row w-fit mx-0 px-4 py-3 rounded-lg shadow-md bg-green-600 hover:bg-black'>
                             <div className='size-10 my-auto mr-4'>
-                            <div className=' size-full rounded-full border-white border flex flex-row justify-center group-hover:border-gray-600 group-hover:ease-in-out duration-200'>
+                            <div className=' size-full rounded-full border-white border flex flex-row justify-center'>
                                 <div className='flex flex-col justify-center'> 
                                 <h3 className='font-light text-4xl text-white group-hover:text-gray-600 group-hover:ease-in-out duration-200'> {'>'} </h3>
                                 </div>
                             </div>
                             </div>
-                            <div className='bg-transparent mx-0 mh-auto p-0 text-4xl text-white group-hover:text-gray-600 group-hover:ease-in-out duration-200 font-normal'>  <a href="https://www.celebraterecovery.ca/" target="_blank">Learn More</a></div>
+                            <div className='bg-transparent mx-0 mh-auto  text-4xl text-white -translate-y-0.5'>  <a href="https://www.celebraterecovery.ca/" target="_blank">Learn More</a></div>
                         </button>
 
                     </div>

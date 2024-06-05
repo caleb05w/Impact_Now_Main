@@ -26,15 +26,15 @@ function Donate() {
                     <div className='w-2/3 h-full'>
                         <h5 className='my-5 text-white'> If you would like to make an impact by volunteering with us, please email kamal@impactnowfoundation.com</h5>
 
-                        <button id='team' className='flex flex-row w-fit mx-0 px-0 bg-transparent group border-none'>
+                        <button id='team' className='group flex flex-row w-fit mx-0 px-4 py-3 rounded-lg shadow-md bg-green-600 hover:bg-black'>
                             <div className='size-10 my-auto mr-4'>
-                            <div className=' size-full rounded-full border-white border flex flex-row justify-center group-hover:border-gray-600 group-hover:ease-in-out duration-200'>
+                            <div className=' size-full rounded-full  border flex flex-row justify-center hover:border-black hover:border-1'>
                                 <div className='flex flex-col justify-center'> 
-                                <h3 className='font-light text-4xl text-white group-hover:text-gray-600 group-hover:ease-in-out duration-200'> {'>'} </h3>
+                                <h3 id='white' className='font-light text-4xl' style = {{transition: 'ease-in-out 0.3s'}}> {'>'} </h3>
                                 </div>
                             </div>
                             </div>
-                            <div className='bg-transparent mx-0 mh-auto p-0 text-4xl text-white group-hover:text-gray-600 group-hover:ease-in-out duration-200 font-normal'> <Link to='/'> Projects </Link></div>
+                            <div className='arrowButton bg-transparent mx-0 mh-auto p-0 text-4xl -translate-y-0.5'> <Link to='/'> Projects </Link></div>
                         </button>
 
                     </div>
@@ -43,11 +43,11 @@ function Donate() {
         </div>
         
 
-            <div className='h-fit w-full z-10 mt-10 mx-auto bg-gray-200 pb-24'>
+            <div className='max-h-[10%] w-full z-10 mt-10 mx-auto bg-gray-200 pb-24'>
                 <div className=' w-4/5 px-16 grid grid-cols-3 gap-8 m-auto '>
                     
                 
-                    <div className='group mt-10 mb-8 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-orange-400 hover:border-1 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
+                    <div className='group mt-10 mb-2 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-orange-400 hover:border-1 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                         <AiOutlineCaretDown size={80} className='fill-transparent mx-auto m-0 p-0 -translate-y-6 group-hover:fill-orange-400 group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
                         <div className='mx-8 my-12 grid gap-10 -translate-y-10' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3> Donate Online </h3>
@@ -56,7 +56,7 @@ function Donate() {
                         </div>
                     </div>
 
-                    <div className='group mt-10 mb-8 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-blue-400 hover:border-3 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
+                    <div className='group mt-10 mb-2 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-blue-400 hover:border-3 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                     <AiOutlineCaretDown size={80} className='fill-transparent mx-auto m-0 p-0 -translate-y-6 group-hover:fill-blue-400 group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
                         <div className='mx-8 my-12 grid gap-10 -translate-y-10' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3> Interact Etransfer</h3>
@@ -65,7 +65,7 @@ function Donate() {
                         </div>
                     </div>
 
-                    <div className='group mt-10 mb-8 rounded-lg w-full border-3 border-transparent bg-white shadow-md text-center hover:border-green-500 hover:border-3 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
+                    <div className='group mt-10 mb-2 rounded-lg w-full border-3 border-transparent bg-white shadow-md text-center hover:border-green-500 hover:border-3 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                     <AiOutlineCaretDown size={80} className='fill-transparent mx-auto m-0 p-0 -translate-y-6 group-hover:fill-green-500 group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
                         <div className='mx-8 my-12 grid gap-10 -translate-y-10' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3> Donate by check </h3>
