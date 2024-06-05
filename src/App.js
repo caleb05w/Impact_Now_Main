@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
 //pages
 import Home from './Pages/Home.js';
 import About from './Pages/About.js'
@@ -40,3 +41,5 @@ function App() {
 }
 
 export default App;
+
+

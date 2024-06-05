@@ -9,6 +9,9 @@ import Project from '../Components/Project'
 import ProjectLeft from '../Components/ProjectLeft'
 import ProjectCR from '../Components/ProjectCR'
 import video from '../assets/BG1.gif'
+import EmailForm from '../Components/Email'
+
+
 
 
 
@@ -96,8 +99,14 @@ function Home() {
     </div>
     </div>
     <div className='mb-10'></div>
+
+    <EmailForm />
+
+    
     </div>
     // div for bg color
+
+
   )
 }
 
