@@ -10,29 +10,28 @@ import Minutes from './Pages/Minutes.js'
 import Finance from './Pages/Finance.js'
 import Policy from './Pages/Policy.js'
 import Team from './Pages/Team.js'
+import CelebrateRecovery from './Pages/CRpage.js'
 
 //Components
 import Navbar from './Components/Navbar.js'
 import Footer from './Components/Footer.js'
-import Example from './Components/Example.js'
-import Dropdown from './Components/Dropdown.js'
-
+import ScrollToTop from './Components/ScrollToTop.js'
 
 function App() {
   return (
     <div className="App">
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />
-        <Route exact path='/example' element={<Example />} />
         <Route exact path='/donate' element={<Donate />} />
         <Route exact path='/minutes' element={<Minutes/>} />
-        <Route exact path='/dropdown' element={<Dropdown/>} />
         <Route exact path='/finance' element={<Finance/>} />
         <Route exact path='/policy' element={<Policy/>} />
         <Route exact path='/team' element={<Team/>} />
+        <Route exact path='/celebraterecovery' element={<CelebrateRecovery/>} />
       </Routes>
       <Footer />
     </Router>

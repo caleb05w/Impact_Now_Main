@@ -7,11 +7,13 @@ import NSH from '../assets/NSH.png'
 import '../output.css'
 import Project from '../Components/Project'
 import ProjectLeft from '../Components/ProjectLeft'
+import ProjectCR from '../Components/ProjectCR'
 import video from '../assets/BG1.gif'
 
 
 
 function Home() {
+
   return (
     <div className='pb-20 bg-gray-200'> 
     {/* //div for bg color */}
@@ -37,8 +39,8 @@ function Home() {
           <h5 className=' mt-10 z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="grid grid-cols-2 mt-10">
-          <button className=''>About Us</button>
-          <button className=''>Get Involved</button>
+          <button className='headingHover'>About Us</button>
+          <button className='headingHover'>Get Involved</button>
           </div>
           </div>
         </div>
@@ -48,33 +50,34 @@ function Home() {
       <div className=''>
       <div className='h-fit w-full mt-[9%]'>
 
-      <Project title='CELEBRATE RECOVERY'
+      <ProjectCR title='CELEBRATE RECOVERY'
        description='Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.' 
        image={CR} 
        description2='words' 
        button='Learn More' 
        button2='Go Back'
        backgroundColor='#F89926'
-       borderColor='2px solid #1f2937' />
+       borderColor='2px solid white' 
+       textColor= 'white' />
 
        
       <ProjectLeft title='WISER WITH AGE'
        description='Wiser With Age is a community-based mentorship program that matches seniors with young adults.The program was first started during the Pandemic in order to alleviate adverse effects on the senior and young adult populations’ mental health due to social isolation, depression, stress, and lack of involvement in activities.' 
        image={WWA} 
        description2='Wiser With Age continues to evolve to add value to the lives of seniors and young adults. Young adults help seniors with groceries and drive them to community events to socialize and to attend seminars on helpful topics by guest speakers. Seniors also hold workshops which the young adults help organize and run. At the end of the program participants film a short inspirational video about their mentor and scholarships are awarded to the young adults of the top three entries.' 
-       button='Donate Now' 
+       button='Learn More' 
        button2='Go Back'
        backgroundColor='#FFFFFF' 
-       borderColor='2px solid #1f2937' />
+       borderColor='2px solid #2B2C2C' />
 
       <Project title='MEALS ON WHEELS'
        description='Meals On Wheels provides tasty and nutritious meals donated by a local Richmond business to seniors who are living alone. The meals are delivered weekly. Meals provide important physical nourishment but they are also a way for us to connect with valued members of our community to ensure their emotional and spiritual wellbeing. '
        image={MOW} 
        description2='If you would like to get involved, please send an email to nicolas@imactnowfoundation.com.' 
-       button='Learn More' 
+       button='Donate Now' 
        button2='Go Back'
        backgroundColor='#8FC544' 
-       borderColor='2px solid #1f2937' />
+       borderColor='2px solid white' />
 
       <ProjectLeft title='NEPAL SHALOM HOUSE'
        description='Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education. '
@@ -83,14 +86,17 @@ function Home() {
        button='Learn More' 
        button2='Go Back'
        backgroundColor='#FFFFFF' 
-       borderColor='2px solid #1f2937' />
+       borderColor='2px solid #2B2C2C' />
 
       </div>
     </div>
     </div>
+    <div className='mb-10'></div>
     </div>
     // div for bg color
   )
 }
 
-export default Home
+
+
+export default Home 

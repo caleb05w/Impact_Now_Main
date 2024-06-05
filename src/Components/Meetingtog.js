@@ -16,7 +16,7 @@ const content = showContent ? (
 
 <div className=' justify w-full overflow-hidden'>
 
-<button className='bg-black border-2 text-white rounded-none w-full' onClick={handleButtonClick} style={{ transition: 'background-color 0.3s' }}> 
+<button className='bg-black text-white rounded-none w-full' onClick={handleButtonClick} style={{ transition: 'background-color 0.3s' }}> 
   <div className='flex flex-col w-full h-full'>
     <div className='container flex flex-row justify-between overflow-hidden'>
       <h4 className='text-white'>{year}</h4>
@@ -38,7 +38,7 @@ const content = showContent ? (
             
 <div className=' justify w-full overflow-hidden'>
 
-<button className='bg-transparent border-2 text-white rounded-none w-full' onClick={handleButtonClick} style={{ transition: 'background-color 0.3s' }}> 
+<button className='bg-transparent border border-black text-white rounded-none w-full' onClick={handleButtonClick} style={{ transition: 'background-color 0.3s' }}> 
   <div className='flex flex-col gap-4 w-full h-full'>
     <div className='container flex flex-row justify-between overflow-hidden'>
       <h4 className='text-black'>{year}</h4>

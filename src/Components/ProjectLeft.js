@@ -19,22 +19,22 @@ function ProjectLeft({title, description, image, description2, button, button2, 
                 <span className='text-white h-0 overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> {description} </span>
                 </div>
 
-                <button className='bg-transparent border-2 text-white rounded-none' id='project' onClick={handleButtonClick}> { button2 } </button>
+                <button className='projectButton border-white border-2' onClick={handleButtonClick}> { button2 }</button>
             </div>
             <img className='z-10 w-[110%] h-[110%] object-cover' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={image} ></img>
         </div>
     ) :  
-    <div className='grid-cols-2 grid w-full max-h-lvh overflow-hidden' style={{ transition: 'background-color 0.3s', backgroundColor: backgroundColor}}>
+    <div className='grid-cols-2 grid w-full max-h-lvh overflow-hidden'>
         <div className='m-16 gap-10 grid text-center'>
             <h1 className > {title} </h1>
             
            
             <div className='grid grid-cols-2 w-[200%] gap-[20%] justify-items-center' style={{ transition: 'ease-in-out 0.3s', transform: 'translateX(-55%)', color: textColor}}  >
-                <span className='h-0 overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> { description2} </span>
+                <span className=' h-0 overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> { description2} </span>
                 <span className='h-max-lvh overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> { description} </span>
                 </div>
 
-            <button className='bg-transparent rounded-none' id='project' style={{color: textColor, border: borderColor}} onClick={handleButtonClick}> { button } </button>
+            <button className='projectButtonTeam' onClick={handleButtonClick}>{ button }</button>
         </div>
         <img className='object-cover h-full w-full z-10' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={ image } ></img>
     </div>;

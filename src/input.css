@@ -89,15 +89,21 @@ h5 {
     font-family: "Fira Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: #A1A1A1;
+    color: #6b7280;
+    font-size: 1.2vw;
+
+}
+
+h4 {
+    font-size: 1.2vw;
 }
 
 ul {
     font-family: "Fira Sans", sans-serif;
     font-size: 1vw;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
-    color: #A1A1A1;
+    color: #6b7280;
 }
 
 span {
@@ -113,21 +119,23 @@ span {
 button {
    
   
-    color: white;
-    border: 1px solid white;
+
+    /* border: 1.5px solid white; */
     width: fit-content;
     height: fit-content;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    font-size: 1.2vw;
+    font-size: 1.2vw;
     margin: auto;
-    /* transition: ease-in-out 0.3s; */
+    transition: ease-in-out 0.3s;
 }
 
-button:hover {
-    background-color: black;
+/* button:hover { */
+    /* background-color: black;
     border: 1px solid black;
-    color: white;
-    transition: ease-in-out 0.2s;
-}
+    color: white; */
+    /* transition: ease-in-out 0.2s;
+} */
 
 button:active{
     transform: scale(0.9);
@@ -137,6 +145,50 @@ button:active{
 button#project {
     color: inherit;
     border: solid inherit
+}
+
+.headingHover{
+    border: 1px solid white;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    font-size: 1.2vw;
+    font-size: 1.2vw;
+    margin: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.headingHover:hover{
+    background-color: white;
+    color: black;
+    font-weight: 430;
+    transition: ease-in-out 0.3s;
+}
+
+.projectButton{
+    font-weight: 600;
+    color:white;
+}
+
+.projectButton:hover {
+    background-color: white;
+    color: black;
+    font-weight: 430;
+    transition: ease-in-out 0.3s;
+}
+
+.projectButtonTeam{
+    font-weight: 600;
+    color:black;
+    border: 1px solid black;
+}
+
+.projectButtonTeam:hover {
+    background-color: black;
+    color: white;
+    font-weight: 430;
+    transition: ease-in-out 0.3s;
 }
 
 /* button:hover {
@@ -193,4 +245,23 @@ button.dropdown-toggle.btn.btn-primary {
 #bootstrap-overrides h1 { /* 100+1=101 priority score, yay! */
     line-height: 1;
     color: inherit;
+  }
+
+
+  /* animations */
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the .slide-left class */
+  .slide-left {
+    animation: slideLeft 0.5s ease-out;
   }
