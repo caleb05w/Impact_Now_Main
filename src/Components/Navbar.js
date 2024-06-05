@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <div className="w-full ">
-      <div className="w-4/5 m-auto h-fit py-4  grid grid-cols-2  items-center">
+      <div className="w-4/5 m-auto h-fit py-[1.5%] grid grid-cols-2  items-center">
         <div className='flex w-full h-10'>
         <img className="object-contain h-full w-fit mr-3 mb-5" src={Logo} />
         <h3 className='my-auto'> <Link to='/'> IMPACT NOW </Link></h3>

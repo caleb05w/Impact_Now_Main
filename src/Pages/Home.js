@@ -28,19 +28,19 @@ function Home() {
   </div>
 
     
-    <div className='w-4/5 m-auto pt-20'>
+    <div className='w-4/5 m-auto pt-[2%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
       <div className='text-center mx-25 my-20 w-2/3 z-20'>
         <div className='flex justify-center'> 
-          <div className='h-[15%] w-[15%] border-black border-2'>
+          <div className='h-[15%] w-[15%]'>
           <img className="w-full h-full object-cover" src={logo}></img>
           </div>
          </div>
         <div className='w-2/3 mx-auto text-center z-10'>
-          <h1 className='mt-5 z-10 text-white'> Impact N.O.W </h1>
-          <h5 className=' mt-10 z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
+          <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
+          <h5 className=' mt-[8%] z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="grid grid-cols-2 mt-10">
           <button className='headingHover'>About Us</button>
