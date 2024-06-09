@@ -11,7 +11,7 @@ function ProjectLeft({title, description, image, description2, button, button2, 
 
     const content = showContent ? (
         <div className='bg-black grid-cols-2 grid w-full max-h-lvh overflow-hidden' style={{ transition: 'background-color 0.3s' }}>
-            <div className='m-16 grid gap-10 text-center'>
+            <div className='mx-[0%] my-[10%] grid gap-10 text-center'>
                 <h1 className='text-white'> {title} </h1>
 
                 <div className='grid grid-cols-2 w-[200%] gap-[20%]  ' style={{ transition: 'ease-in-out 0.3s', transform: 'translateX(5%)'}}>
@@ -25,7 +25,7 @@ function ProjectLeft({title, description, image, description2, button, button2, 
         </div>
     ) :  
     <div className='bg-white grid-cols-2 grid w-full max-h-lvh overflow-hidden'>
-        <div className='m-16 gap-10 grid text-center'>
+        <div className='mx-[0%] my-[10%] gap-10 grid text-center'>
             <h1 className > {title} </h1>
             
            

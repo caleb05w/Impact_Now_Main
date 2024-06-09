@@ -25,18 +25,18 @@ function Home() {
     <div className='overflow-hidden absolute w-full h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-            <img className='object-cover w-full h-full opacity-40' src={video}></img>
+            {/* <img className='object-cover w-full h-full opacity-40' src={video}></img> */}
         </div>
       </div>
   </div>
 
     
-    <div className='w-full m-auto pt-[2%]'>
+    <div className='md:w-10/12 lg:w-4/5 m-auto pt-[2%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
       <div className='text-center mx-25 my-20 w-2/3 z-20'>
-        <div className='flex justify-center'> 
+        <div className='flex justify-center'>  
           <div className='h-[15%] w-[15%]'>
           <img className="w-full h-full object-cover" src={logo}></img>
           </div>
@@ -45,7 +45,7 @@ function Home() {
           <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
           <h5 className=' mt-[8%] z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
-          <div className="grid grid-cols-2 mt-10">
+          <div className="md:grid-rows-2 md:gap-2 grid lg:grid-cols-2 mt-10">
           <button className='headingHover'>About Us</button>
           <button className='headingHover'>Get Involved</button>
           </div>
@@ -55,7 +55,7 @@ function Home() {
 
         {/* Projects */}
       <div className=''>
-      <div className='h-fit w-full mt-[5%]'>
+      <div className='h-fit w-full mt-[5%] md:mt-[10%]'>
 
       <ProjectCR title='CELEBRATE RECOVERY'
        description='Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.' 

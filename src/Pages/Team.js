@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import Person from '../assets/CR.png'
 import Kamal from '../assets/Kamal.jpg'
+import Vish from '../assets/Vish.png'
 import TeamTog from '../Components/TeamTog'
 import '../input.css'
 
@@ -61,7 +62,7 @@ function Team() {
           )
         case 2:
           return (<TeamTog 
-            image = {Person}
+            image = {Vish}
             name = {"Vishwa Mohan"}
             bio = {"Vishwa is an experienced and well-travelled chef in the hospitality industry for over 20 years. With a diploma in hospitality management, he is a professional both in the kitchen and F&B Operations. Vishwa has worked in multitude of setting before, including The Oberoi Udaivilas in India, Four season in Maldives, Fairmont in Dubai and china, Burj – al – arab in Dubai, Fairmont Royal York Fairmont Airport and Pacific Rim in Canada. He has also had his own restaurant and now he is leading a team of chefs and managers in the Alma mater society of UBC."}
             bio2 = {"Vishwa Gave his life to Christ in the beginning of 2020 and in the summer of 2021 as Vishwa says, he had a dream, so strong that he felt that his spirit was out of his body and was standing on Granville street. He saw himself walking on Granville street and looking at a homeless person wrapped in a blanket; He helped that person by bringing him to his house, getting him cleaned up, making a hot meal for him and providing a bed to sleep. Next day he took that person to his work kitchen and started training him to work and eventually giving him a full time work. And that person was off the streets. Then Vishwa heard a voice saying “this is your mission”. After that vision/dream, Vishwa talked about his vision to Pastor Kamal Gamal and with the help of Emily and Digamber, they formed Impact Now Foundation to help people living in need."}
@@ -89,11 +90,11 @@ function Team() {
 
 
   return (
-    <div className=' w-full min-h-screen py-10 '>
-        <div className='m-auto mb-10 p-10 bg-white  w-4/5 h-fit'>
+    <div className=' w-full min-h-screen lg:py-10 md:pb-10 '>
+        <div className='m-auto mb-10 p-10 bg-white lg:w-4/5 md:w-12/12 h-fit'>
             <div className='text-center pt-10'>
                 <h1> Meet the Team </h1>
-                <h5 className='mt-4'> Some body text about the team goes here.</h5>
+                <h5 className=' md:pb-10'> Some body text about the team goes here.</h5>
 {/* 
                 <div className="grid grid-cols-2 mt-20 w-[50%] mx-auto">
                     <button className='projectButtonTeam'>About Us</button>
@@ -105,20 +106,20 @@ function Team() {
 {/* I want to be able to look at his face wihtout having to look away} */}
             
 
-            <div className='max-h-[100%] overflow-hidden translate-y-[25%]'>
-                <div className='w-fit grid grid-cols-3 gap-8'>
+            <div className='max-h-[100%] overflow-hidden lg:translate-y-[25%]'>
+                <div className='w-fit grid grid-cols-3 lg:gap-8 md:gap-2'>
                 
                     <div className='text-center'>
                     <h3> Kamal Ghamal</h3>
                     <h5> President </h5>
-                    <img className='object-cover w-full max-h-[70%]' src={Kamal} onClick={handleCase1} ></img>
+                    <img className='object-cover w-full max-h-[70%] ' src={Kamal} onClick={handleCase1} ></img>
                     </div>
 
                                     
                     <div className='text-center'>
                     <h3> Vishwa Mohan</h3>
                     <h5> Treasurer </h5>
-                    <img className='object-cover w-full max-h-[70%]' src={Person} onClick={handleCase2}></img>
+                    <img className='object-cover w-full lg:max-h-[70%] md:h-[100%]]' src={Vish} onClick={handleCase2}></img>
                     </div>
 
                                     
@@ -130,7 +131,7 @@ function Team() {
 
                 </div>
             </div>
-            <div className={animate ? 'slide-left' : ''}></div>
+  
 
             
             <div ref={case1Ref}>

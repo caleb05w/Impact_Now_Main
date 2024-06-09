@@ -282,3 +282,19 @@ button.dropdown-toggle.btn.btn-primary {
   .slide-left {
     animation: slideLeft 0.5s ease-out;
   }
+
+  /*mobile */
+
+  @media only screen and (max-width: 800px) {
+
+a,ul { font-size: 1.5vw;
+    color: black;
+}
+
+
+
+.buttonUpscaleMd {
+    font-size: 2.5vw;
+    color:white;
+}
+  }
