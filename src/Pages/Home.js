@@ -31,7 +31,7 @@ function Home() {
   </div>
 
     
-    <div className='w-4/5 m-auto pt-[2%]'>
+    <div className='w-full m-auto pt-[2%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>

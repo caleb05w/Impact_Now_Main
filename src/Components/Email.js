@@ -25,7 +25,7 @@ const EmailForm = () => {
 
   return (
     <div>
-      <h2>Send an Email</h2>
+      <h2>Send a really epic email</h2>
       <form onSubmit={sendEmail}>
         <div>
           <label>Email:</label>
