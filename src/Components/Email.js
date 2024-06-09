@@ -1,53 +1,87 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { HiBattery50 } from 'react-icons/hi2';
 
-const EmailForm = () => {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+function EmailForm() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    const templateParams = {
-      to_name: 'Justin Chew',
-      from_name: email,
-      message: message,
-      to_email: 'justinchew9@gmail.com'
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
     };
 
-    emailjs.send('service_7js25ee', 'template_48q6cjn', templateParams, 'FiBoRLlCE8mwyaxIr')
-      .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-      }, (err) => {
-        console.error('Failed to send email. Error:', err);
-      });
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-  return (
-    <div>
-      <h2>Send a really epic email</h2>
-      <form onSubmit={sendEmail}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  );
+        emailjs.sendForm('service_7js25ee', 'template_rhopn5k', e.target, 'FiBoRLlCE8mwyaxIr')
+            .then((result) => {
+                console.log(result.text);
+                alert('Message sent successfully!');
+            }, (error) => {
+                console.log(error.text);
+                alert('An error occurred, please try again.');
+            });
+
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+    };
+
+    return (
+        <div className='mt-[10%] p-10 bg-white  justify-center w-full h-[100%] '>
+            
+
+            <form className='w-full'onSubmit={handleSubmit}>
+                <div className='w-full grid grid-cols-2 gap-4'>
+                
+                <div className=''>
+                    <h1> HEllo1 </h1>
+                </div>
+
+
+              
+               
+
+                <div className='flex flex-col gap-4 h-full w-full'>
+
+                <div className='grid grid-cols-2 gap-4'>
+                    <label className='flex border-black border-2 '>
+                        <div className='py-3 px-3 border-black bg-black'> <h5 className='text-white'>Name</h5> </div>
+                        <input className='w-full' type="text" name="name" value={formData.name} onChange={handleChange} required />
+                    </label>
+
+                    <label className='flex w-full h-full border-black border-2 '>
+                        <div className='py-3 px-3 border-black bg-black'> <h5 className='text-white'>Email</h5> </div>
+                        <input className='w-full' type="email" name="email" value={formData.email} onChange={handleChange} required />
+                    </label>
+
+                    </div>
+
+                   <label className=' h-full w-full border-black border-2 '>
+                        <div className=' px-3 py-3 border-black bg-black'> <h5 className='text-white'>Message</h5> </div>
+                        <textarea className='w-full h-fit border-2 border-black' name="message" value={formData.message} onChange={handleChange} required />
+                    </label>
+
+                    <button className='flex justify-center mt-6 border-black border-2'type="submit">Send</button>
+                
+            
+                
+                </div>
+
+                </div>
+            
+            </form>
+            </div>
+    );
 };
 
 export default EmailForm;
