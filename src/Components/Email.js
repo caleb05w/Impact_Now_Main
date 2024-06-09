@@ -44,7 +44,7 @@ function EmailForm() {
                 <div className='w-full grid grid-cols-2 gap-4'>
                 
                 <div className=''>
-                    <h1> HEllo1 </h1>
+                    <h1> HEllo </h1>
                 </div>
 
 
