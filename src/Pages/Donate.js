@@ -24,7 +24,7 @@ function Donate() {
                 <div className='lg:px-32 sm:px-[10%]'>
                     <h1 className='sm:mt-[15%] lg:mt-0 lg:w-2/3 text-white'> Prayers can move mountains </h1>
                     <div className='lg:w-2/3 md:m-auto h-full'>
-                        <h5 className='lg:my-5 sm:text-lg sm:mt-[3%] text-white'> If you would like to make an impact by volunteering with us, please email kamal@impactnowfoundation.com</h5>
+                        <h5 className='lg:my-5 sm:mt-[3%] text-white'> If you would like to make an impact by volunteering with us, please email kamal@impactnowfoundation.com</h5>
 
                         <button id='team' className='mobileHide group flex flex-row w-fit lg:mx-0 lg:px-4 lg:py-3 rounded-lg shadow-md bg-green-600 hover:bg-black  md:px-2 md:py-0 mg:lg-auto'>
                             <div className='mobileHide lg:size-10 my-auto mr-4 md:size-5'>
@@ -43,7 +43,7 @@ function Donate() {
         </div>
         
 
-            <div className='max-h-[10%] w-full z-10 mx-auto lg:pb-[10%] sm:pb-[5%]'>
+            <div className='max-h-[10%] w-full z-10 mx-auto lg:pb-[10%] sm:pb-[10%]'>
                 <div className='w-4/5 lg:px-16 md:px-6 grid lg:grid-cols-3 sm:gap-4 sm:grid-cols-2 lg:gap-8 m-auto '>
                     
                 
