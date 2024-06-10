@@ -49,7 +49,7 @@ function Donate() {
                 
                     <div className='group mt-10 md:h-fit mb-2 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-orange-400 hover:border-1 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                         <AiOutlineCaretDown size={80} className='mobileHide fill-transparent mx-auto m-0 p-0 -translate-y-6 lg:group-hover:fill-orange-400 lg:group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
-                        <div className='mx-8 lg:mt-0 sm:mt-[10%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
+                        <div className='lg:mx-8 lg:mt-0 sm:mt-[10%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3 className=''> Donate Online </h3>
                             <h5 className='mobileHide'>Donate Online securely with a credit card through our online giving provider Sunergo</h5>
                             <h5 className='desktopHide'> Through our online giving provider Sunergo</h5>
@@ -59,10 +59,10 @@ function Donate() {
 
                     <div className='group mt-10 md:h-fit mb-2 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-orange-400 hover:border-1 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                         <AiOutlineCaretDown size={80} className='mobileHide fill-transparent mx-auto m-0 p-0 -translate-y-6 lg:group-hover:fill-orange-400 lg:group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
-                        <div className='mx-8 lg:mt-0 sm:mt-[10%] sm:mb-[8%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
+                        <div className='lg:mx-8 lg:mt-0 sm:mt-[10%] sm:mb-[8%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3 className=''> Interact Etransfer</h3>
                             <h5 className='mobileHide'>You can donate sending an Interact E-Transfer to vishwa@impactnowfoundation.com</h5>
-                            <h5 className='desktopHide'> Donate at: vishwa@impactnowfoundation.com</h5>
+                            <h5 className='desktopHide'> Donate at:  vishwa<br></br>@impactnowfoundation.com</h5>
                             
                              <button className='mt-[4%] border-black text-black hover:text-white'><a className='hover:text-gray-400 lg:text-2xl' id='donateButton' style={{transition: 'ease-in-out 0.3s'}} onClick={() => {navigator.clipboard.writeText('vishwa@impactnowfoundation.com'); window.alert("Link copied");}} >Copy Email</a></button>
                         </div>
@@ -70,7 +70,7 @@ function Donate() {
 
                     <div className='group lg:mt-10 md:h-fit mb-2 rounded-lg w-full border-2 border-transparent bg-white shadow-md text-center hover:border-orange-400 hover:border-1 hover:shadow-2xl' style ={{ transition: 'ease-in-out 0.3s' }}>
                         <AiOutlineCaretDown size={80} className='mobileHide fill-transparent mx-auto m-0 p-0 -translate-y-6 lg:group-hover:fill-orange-400 lg:group-hover:-translate-y-3' style={{transition: 'ease-in-out 0.3s'}}></AiOutlineCaretDown>
-                        <div className='mx-8 lg:mt-0 sm:mt-[10%] sm:mb-[8%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
+                        <div className='lg:mx-8 lg:mt-0 sm:mt-[10%] sm:mb-[8%] grid lg:gap-3 sm:gap-1 md:-translate-y-[35%]' style={{transition: 'ease-in-out 0.3s'}}>
                             <h3 className=''> Donate by check </h3>
                             <h5 className='mobileHide'>You can donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h5>
                             <h5 className='desktopHide'> Address to: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h5>
