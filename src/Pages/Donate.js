@@ -53,7 +53,7 @@ function Donate() {
                             <h3 className=''> Donate Online </h3>
                             <h5 className='mobileHide'>Donate Online securely with a credit card through our online giving provider Sunergo</h5>
                             <h5 className='desktopHide'> Through our online giving provider Sunergo</h5>
-                            <button className='mt-[4%] border-black text-black hover:text-white'><h3><a className='hover:text-gray-400 sm:text-lg lg:text-2xl' style={{transition: 'ease-in-out 0.3s'}} href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank">Learn More</a></h3></button>
+                            <button className='mt-[4%] border-black text-black hover:text-white'><a className='hover:text-gray-400 lg:text-2xl' id='donateButton' style={{transition: 'ease-in-out 0.3s'}} href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank">Learn More</a></button>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ function Donate() {
                             <h5 className='mobileHide'>You can donate sending an Interact E-Transfer to vishwa@impactnowfoundation.com</h5>
                             <h5 className='desktopHide'> Donate at: vishwa@impactnowfoundation.com</h5>
                             
-                             <button className='mt-[4%] border-black text-black hover:text-white'><h3><a className='hover:text-gray-400 sm:text-lg lg:text-2xl' style={{transition: 'ease-in-out 0.3s'}} onClick={() => {navigator.clipboard.writeText('vishwa@impactnowfoundation.com'); window.alert("Link copied");}} >Copy Email</a></h3></button>
+                             <button className='mt-[4%] border-black text-black hover:text-white'><a className='hover:text-gray-400 lg:text-2xl' id='donateButton' style={{transition: 'ease-in-out 0.3s'}} onClick={() => {navigator.clipboard.writeText('vishwa@impactnowfoundation.com'); window.alert("Link copied");}} >Copy Email</a></button>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ function Donate() {
                             <h3 className=''> Donate by check </h3>
                             <h5 className='mobileHide'>You can donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h5>
                             <h5 className='desktopHide'> Address to: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h5>
-                            <button className='mt-[4%] border-black text-black hover:text-white'><h3><a className='hover:text-gray-400 sm:text-lg lg:text-2xl' style={{transition: 'ease-in-out 0.3s'}} onClick={() => {navigator.clipboard.writeText('Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8'); window.alert("Link copied");}} >Copy Address</a></h3></button>
+                            <button className='mt-[4%] border-black text-black hover:text-white'><a className='hover:text-gray-400 lg:text-2xl' id='donateButton' style={{transition: 'ease-in-out 0.3s'}} onClick={() => {navigator.clipboard.writeText('Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8'); window.alert("Link copied");}} >Copy Address</a></button>
                         </div>
                     </div>
 
