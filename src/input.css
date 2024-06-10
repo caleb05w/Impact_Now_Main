@@ -264,6 +264,15 @@ button.dropdown-toggle.btn.btn-primary {
     color: inherit;
   }
 
+.desktopHide {
+    height:0;
+    overflow:hidden;
+    background: transparent;
+    border: transparent;
+    color:transparent;
+    box-shadow: none;
+}
+
 
   /* animations */
 
@@ -287,8 +296,40 @@ button.dropdown-toggle.btn.btn-primary {
 
   @media only screen and (max-width: 800px) {
 
-a,ul { font-size: 1.5vw;
-    color: black;
+#navbar {
+    font-size: 2vw;
+    color:black;
+}
+
+#footer{ 
+    font-size: 2.5vw;
+    color: white;
+}
+
+.mobileHide {
+    height:0;
+    overflow:hidden;
+    background: transparent;
+    border: transparent;
+    color:transparent;
+    box-shadow: none;
+}
+
+.desktopHide {
+    height: fit-content;
+    overflow:show;
+    background: inherit;
+    border: inherit;
+    color:inherit;
+    box-shadow:inherit;
+}
+
+h5 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 3.5vw;
 }
 
 
@@ -297,4 +338,15 @@ a,ul { font-size: 1.5vw;
     font-size: 2.5vw;
     color:white;
 }
+  }
+
+
+  .dropDown{
+    size: 80px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .dropDown {
+      size: 0px;
+    }
   }

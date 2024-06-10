@@ -7,6 +7,17 @@ module.exports = {
       borderWidth: ['responsive', 'hover'],
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
       },
+
+      screens: {
+        'sm': '320px',
+        // => @media (min-width: 640px) { ... }
+  
+        'lg': '800px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'lg': '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
   },
   plugins: [],
 }
