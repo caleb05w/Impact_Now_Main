@@ -17,6 +17,7 @@
     transition: ease-in-out 0.3s;
 }
 
+
 #Navbar ul { 
     transition: ease-in-out 0.3s; 
 }
@@ -301,6 +302,11 @@ button.dropdown-toggle.btn.btn-primary {
     color:black;
 }
 
+span {
+    font-size: 3vw;
+    color:inherit;
+}
+
 #footer{ 
     font-size: 2.5vw;
     color: white;
@@ -342,6 +348,13 @@ h1 {
 }
 
 
+.projectButton{
+    font-weight: 600;
+    font-size: 4vw;
+    color:white;
+}
+
+
 
 .buttonUpscaleMd {
     font-size: 2.5vw;
@@ -354,8 +367,7 @@ h1 {
     size: 80px;
   }
   
-  @media only screen and (max-width: 500px) {
+
     .dropDown {
       size: 0px;
     }
-  }

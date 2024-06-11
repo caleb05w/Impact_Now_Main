@@ -42,7 +42,7 @@ function Home() {
           </div>
          </div>
         <div className='w-2/3 mx-auto text-center z-10'>
-          <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W eee </h1>
+          <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
           <h5 className=' mt-[8%] z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="md:grid-rows-2 md:gap-2 grid lg:grid-cols-2 mt-10">
@@ -55,7 +55,7 @@ function Home() {
 
         {/* Projects */}
       <div className=''>
-      <div className='h-fit w-full mt-[5%] md:mt-[10%]'>
+      <div className='h-fit w-full mt-[5%] md:mt-[10%] sm:grid sm:grid-rows-4'>
 
       <ProjectCR title='CELEBRATE RECOVERY'
        description='Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.' 
