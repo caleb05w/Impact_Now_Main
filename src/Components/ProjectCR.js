@@ -17,7 +17,7 @@ function ProjectCR({title, description, image, description2, button, button2, ba
                 <h1 className='text-white'> {title} </h1>
 
                 <div className='grid grid-cols-2 w-[200%] gap-[20%]  ' style={{ transition: 'ease-in-out 0.3s', transform: 'translateX(5%)'}}>
-                <span className='text-white max-h-lvh'  style={{ transition: 'ease-in-out 0.3s'}}> { description} </span>
+                <span className='text-white max-h-lvh' style={{ transition: 'ease-in-out 0.3s'}}> { description} </span>
                 <span className='text-white h-0 overflow-hidden' style={{ transition: 'ease-in-out 0.3s'}}> {description} </span>
                 </div>
 
@@ -25,8 +25,8 @@ function ProjectCR({title, description, image, description2, button, button2, ba
             </div>
         </div>
     ) :  
-    <div className='lg:grid-cols-2 lg:grid w-full max-h-[150vw] overflow-hidden' style={{ transition: 'background-color 0.3s', backgroundColor: backgroundColor}}>
-    <img className=' lg:w-[110%] lg:h-[110%] sm:h-[80vw] sm:w-[100%] object-cover' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={image} ></img> 
+    <div className='lg:grid-cols-2 lg:grid w-full max-h-[200vw] overflow-hidden' style={{ transition: 'background-color 0.3s', backgroundColor: backgroundColor}}>
+    <img className=' lg:w-[110%] lg:h-[110%] sm:h-[100vw] sm:w-[100%] object-cover' style={{ zIndex: 10, transition: 'ease-in-out 0.3s' }} src ={image} ></img> 
     <div className='mx-[5%] lg:my-[10%] sm:my-[7%] grid lg:gap-10 sm:gap-5 lg:text-center sm:text-left'>
         <h1 className='text-white lg:pl-0 sm:pl-[10%]'> {title} </h1>
 

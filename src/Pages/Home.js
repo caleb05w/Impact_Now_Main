@@ -22,32 +22,32 @@ function Home() {
     {/* //div for bg color */}
   
           {/* Background Video */}
-    <div className='overflow-hidden absolute w-full h-[73%] z-10'>
+    <div className='overflow-hidden absolute w-full sm:min-h-lvh lg:h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-             <img className='object-cover w-full h-full opacity-40' src={video}></img>
+             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={video}></img>
         </div>
       </div>
   </div>
 
     
-    <div className='md:w-10/12 lg:w-4/5 m-auto pt-[2%]'>
+    <div className='lg:w-4/5 m-auto pt-[2%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
-      <div className='text-center mx-25 my-20 w-2/3 z-20'>
+      <div className='text-center mx-25 my-20  w-2/3 z-20'>
         <div className='flex justify-center'>  
-          <div className='h-[15%] w-[15%]'>
+          <div className='lg:h-[15%] lg:w-[15%] sm:h-[20vw] sm:w-[20vw]'>
           <img className="w-full h-full object-cover" src={logo}></img>
           </div>
          </div>
-        <div className='w-2/3 mx-auto text-center z-10'>
+        <div className='lg:w-2/3 sm:w-10/12 mx-auto text-center z-10'>
           <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
-          <h5 className=' mt-[8%] z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
+          <h5 className=' mt-[8%] z-10 text-white sm:text-[3.5vw] lg:text-[1.2vw]'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
-          <div className="md:grid-rows-2 md:gap-2 grid lg:grid-cols-2 mt-10">
-          <button className='headingHover'>About Us</button>
-          <button className='headingHover'>Get Involved</button>
+          <div className="md:grid-rows-2 sm:gap-2 grid lg:grid-cols-2 mt-10">
+          <button className='headingHover sm:w-full'>About Us</button>
+          <button className='headingHover sm:w-full '>Get Involved</button>
           </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ function Home() {
 
         {/* Projects */}
       <div className=''>
-      <div className='h-fit w-full mt-[5%] md:mt-[10%] sm:grid sm:grid-rows-4'>
+      <div className='h-fit w-full mt-[5%] sm:mt-[20vh] sm:grid sm:grid-rows-4'>
 
       <ProjectCR title='CELEBRATE RECOVERY'
        description='Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.' 
