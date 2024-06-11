@@ -25,7 +25,7 @@ function Home() {
     <div className='overflow-hidden absolute w-full h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-            {/* <img className='object-cover w-full h-full opacity-40' src={video}></img> */}
+             <img className='object-cover w-full h-full opacity-40' src={video}></img>
         </div>
       </div>
   </div>
@@ -42,7 +42,7 @@ function Home() {
           </div>
          </div>
         <div className='w-2/3 mx-auto text-center z-10'>
-          <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
+          <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W eee </h1>
           <h5 className=' mt-[8%] z-10 text-white'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="md:grid-rows-2 md:gap-2 grid lg:grid-cols-2 mt-10">
