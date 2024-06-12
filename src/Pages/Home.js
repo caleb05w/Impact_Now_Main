@@ -5,11 +5,20 @@ import WWA from '../assets/WWA.png'
 import MOW from '../assets/MOW.png'
 import NSH from '../assets/NSH.png'
 import '../output.css'
-import Project from '../Components/Project'
-import ProjectLeft from '../Components/ProjectLeft'
-import ProjectCR from '../Components/ProjectCR'
-import video from '../assets/BG1.gif'
+
+
+import Team from '../assets/team.png'
+import Sl1 from '../assets/sl1.png'
+import Sl2 from '../assets/sl2.png'
+import Sl3 from '../assets/sl3.png'
+import { Link } from "react-router-dom"
+
+import { GoArrowRight } from "react-icons/go";
+import { GoArrowUpRight } from "react-icons/go";
+
 import EmailForm from '../Components/Email'
+import ScrollToTopButton from '../Components/ScrollTopButton';
+
 
 
 
@@ -18,20 +27,20 @@ import EmailForm from '../Components/Email'
 function Home() {
 
   return (
-    <div className='pb-20 bg-gray-200'> 
+    <div className='pb-20 bg-gray-200 overflow-x-hidden'> 
     {/* //div for bg color */}
   
           {/* Background Video */}
     <div className='overflow-hidden absolute w-full sm:min-h-lvh lg:h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={video}></img>
+             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={NSH}></img>
         </div>
       </div>
   </div>
 
     
-    <div className='lg:w-4/5 m-auto pt-[2%]'>
+    <div className='m-auto pt-[2%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
@@ -55,52 +64,170 @@ function Home() {
 
         {/* Projects */}
       <div className=''>
-      <div className='h-fit w-full mt-[5%] sm:mt-[20vh] sm:grid sm:grid-rows-4'>
+      
+      <div className='h-fit w-fit mt-[19%]'>
 
-      <ProjectCR title='CELEBRATE RECOVERY'
-       description='Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.' 
-       image={CR} 
-       description2='words' 
-       button='Learn More' 
-       button2='Go Back'
-       backgroundColor='#F89926'
-       borderColor='2px solid white' 
-       textColor= 'white' />
+        <div className='w-4/5 m-auto'>
+          <div className='mx-[10%] w-5/12'>
+          <h5>Our Projects</h5>
+          <h1 className='mt-[2%]'>We're telling more then just stories</h1>
+          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          
+            <div className='flex mt-[7%] gap-[1%] mx-0 p-0'>
+            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit'> <Link to='/donate'>Learn how you can help out</Link></h5></button>
+            <div className='my-auto' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
+            </div>
 
-       
-      <ProjectLeft title='WISER WITH AGE'
-       description='Wiser With Age is a community-based mentorship program that matches seniors with young adults.The program was first started during the Pandemic in order to alleviate adverse effects on the senior and young adult populations’ mental health due to social isolation, depression, stress, and lack of involvement in activities.' 
-       image={WWA} 
-       description2='Wiser With Age continues to evolve to add value to the lives of seniors and young adults. Young adults help seniors with groceries and drive them to community events to socialize and to attend seminars on helpful topics by guest speakers. Seniors also hold workshops which the young adults help organize and run. At the end of the program participants film a short inspirational video about their mentor and scholarships are awarded to the young adults of the top three entries.' 
-       button='Learn More' 
-       button2='Go Back'
-       backgroundColor='#FFFFFF' 
-       borderColor='2px solid #2B2C2C' />
+          </div>
+        </div>
 
-      <Project title='MEALS ON WHEELS'
-       description='Meals On Wheels provides tasty and nutritious meals donated by a local Richmond business to seniors who are living alone. The meals are delivered weekly. Meals provide important physical nourishment but they are also a way for us to connect with valued members of our community to ensure their emotional and spiritual wellbeing. '
-       image={MOW} 
-       description2='If you would like to get involved, please send an email to nicolas@imactnowfoundation.com.' 
-       button='Donate Now' 
-       button2='Go Back'
-       backgroundColor='#8FC544' 
-       borderColor='2px solid white' />
+        {/*Showcase of projects */}
 
-      <ProjectLeft title='NEPAL SHALOM HOUSE'
-       description='Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education. '
-       image={NSH} 
-       description2='Young women from impoverished areas are at high risk of sex trafficking, especially along the busy Nepali-Indian border. Factors include poverty, limited opportunities, low education, and low socioeconomic and cultural status. Shalom House will empower three young women to pursue a university nursing degree, boosting their confidence, skills, and resources to become leaders and role models in their communities.' 
-       button='Learn More' 
-       button2='Go Back'
-       backgroundColor='#FFFFFF' 
-       borderColor='2px solid #2B2C2C' />
+        <div className='mt-[6%]  w-lvw  h-full'>
+
+          <div className='flex w-lvw h-fit overflow-hidden gap-[0.5%]'>
+            <div className=' group w-[29vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+              <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={CR}></img>
+              <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
+                <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Celebrate Recovery</h3></div>
+                <div className='relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Celebrate Recovery (CR) is a biblically-based program that helps people overcome Hurts, Hang-ups, and Habits</h5></div>
+              </div>
+            </div>
+
+
+            <div className=' group w-[69vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+              <img className='object-cover -translate-x-[0.1%] w-[106%] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={MOW}></img>
+              <div className='w-[96%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
+                <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Meals on Wheels</h3></div>
+                <div className='relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Meals On Wheels delivers weekly nutritious meals donated by local Riachmond businesses to seniors living alone. They connect with valued members of our community, supporting their physical, emotional, and spiritual well-being. </h5></div>
+              </div>
+            </div>
+          </div>
+
+            <div className='flex w-lvw h-fit overflow-hidden gap-[0.5%] mt-[0.5%]'>
+
+            <div className=' group w-[69vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+              <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={NSH}></img>
+              <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
+                <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Nepal Shalom House</h3></div>
+                <div className='relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>
+                Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education.</h5></div>
+              </div>
+            </div>
+
+            <div className=' group w-[29vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+              <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={WWA}></img>
+              <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
+                <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Wiser with Age</h3></div>
+                <div className='relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Wiser With Age is a community-based mentorship program that matches seniors with young adults.</h5></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div className='w-4/5 mx-auto mt-[7%]'>
+          <div className='mx-[10%] w-7/12'>
+
+          <h5>Our Mission</h5>
+          <h1 className='mt-[2%]'>Change that extends past the community</h1>
+          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          </div>
+
+          <div className='mt-[10%] grid grid-cols-2  w-10/12 mx-[10%] gap-[5%]'>
+            <div className=''>
+              <h5>Our Mission</h5>
+              <h4 className='mt-[3%]'>Strong communities where individuals are living to their full potential, thriving, and serving other communities.</h4>
+            </div>
+
+            <div className=''>
+              <h5>Our Vision</h5>
+              <h4 className='mt-[3%]'>Strong communities where individuals are living to their full potential, thriving, and serving other communities.</h4>
+            </div>
+
+          </div>
+
+          {/* Line */}
+          <div className='w-4/5 mx-auto my-[10%]'>
+          <div className='border-b-2 border-black'></div>
+          </div>
+
+
+          <div className='flex w-4/5 mx-auto gap-[2%] h-[100%]'>
+
+            <div className='w-7/12 '>
+            <h5>Join us in</h5>
+            <h1 className='mt-[2%]'>Growing physically, spiritually, mentally, emotionally, and economically.</h1>
+            <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/team'><h4 className='group-hover:text-white ease-in-out duration-300'>Meet the team</h4></Link></button>
+            
+            {/* <div className='flex mt-[7%] gap-[1%]'>
+            <h5 className=''> <Link to='/team'> Meet the team  </Link></h5>
+            <div className='my-auto' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
+            </div> */}
+
+
+            </div>
+
+            <div className='h-fit w-6/12 overflow-hidden'>
+            <img className='object-cover w-full h-[45lvh]' src={Team}></img>
+            </div>
+
+          </div>
+
+              {/* Line */}
+              <div className='w-4/5 mx-auto my-[10%]'>
+          <div className='border-b-2 border-black'></div>
+          </div>
+        </div>
+
+       <div className='flex max-w-[100vw] h-[50lvh] gap-[0.5%] overflow-hidden'>
+          <img className='h-full w-full object-cover' src={Sl1}></img>
+          <img className='h-full w-full object-cover' src={Sl2}></img>
+          <img className='h-full w-full object-cover' src={Sl3}></img>
+        </div> 
+
+        <div className='w-5/6 mt-[7%] mx-auto'>
+          <div className='ml-[35%]'>
+          <h1 className='mt-[2%] w-9/12'>We’re building the leaders of tomorrow.</h1>
+
+            <div class='grid grid-cols-3 mt-[10%] gap-[3%]'>
+
+              <div className=''> 
+                <h4 id='heavy'>Compassion</h4>
+                <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
+              </div>
+
+              <div className=''> 
+                <h4 id='heavy' >Leadership Development</h4>
+                <h5 className='mt-[5%]'>We collaborate together to empower others to develop their full potentials, strengths, skills and help pursue their passions.</h5>
+                </div>
+
+              <div className=''> 
+                <h4 id='heavy' >Building Communities/Planting Churches</h4>
+                <h5 className='mt-[5%]'>We care for every individual with compassion, respect, and equality.
+                </h5>
+              </div>
+
+            </div>
+
+            <div className='flex mt-[10%] gap-[0.5%]'>
+            <ScrollToTopButton
+            Content="Back to Top"/>
+            <div className='my-auto hover:text-black' style={{color: '#6b7280', fontSize:'1.2vw'}}><GoArrowUpRight /></div>
+            </div>
+          </div>
+        </div>
+
+
+
 
       </div>
+
     </div>
     </div>
     <div className='mb-10'></div>
 
-    <EmailForm />
+    {/* <EmailForm /> */}
 
     
     </div>

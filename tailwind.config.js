@@ -6,6 +6,11 @@ module.exports = {
       borderStyle: ['responsive', 'hover'],
       borderWidth: ['responsive', 'hover'],
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+      borderStyle: ['responsive','hover'],
+
+      backgroundImage: {
+        'prayer': "url('assets/bg.png')",
+       }
       },
 
       screens: {
