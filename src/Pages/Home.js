@@ -66,29 +66,33 @@ function Home() {
         {/* Projects */}
       <div className=''>
       
-      <div className='h-fit w-fit mt-[12%]'>
+      <div className='h-fit w-fit sm:mt-[20%] lg:mt-[12%]'>
 
-        <div className='w-4/5 m-auto'>
-          <div className='mx-[10%] w-5/12'>
+        <div className='sm:full lg:w-4/5 m-auto'>
+          <div className='mx-[10%] lg:w-5/12 sm:full'>
           <h5>Our Projects</h5>
-          <h1 className='mt-[2%]'>We're telling more then just stories</h1>
+          <h1 className='mt-[2%]'>We're telling more than just stories.</h1>
           <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           
-            <div className='flex mt-[7%] gap-[1%] mx-0 p-0'>
-            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit'> <Link to='/donate'>Learn how you can help out</Link></h5></button>
-            <div className='my-auto' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
+            <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
+            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide'> <Link to='/donate'>Learn how you can help out</Link></h5></button>
+            <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
             </div>
+
+            <button className='desktopHide group sm:mt-[10%] lg:mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/team'><h4 className='group-hover:text-white ease-in-out duration-300 desktopHide'>Meet the team</h4></Link></button>
+
+
 
           </div>
         </div>
 
         {/*Showcase of projects */}
 
-        <div className='mt-[6%]  w-lvw  h-full'>
+        <div className='lg:mt-[6%] sm:mt-[13%] w-lvw  h-full'>
 
-          <div className='flex w-lvw h-fit overflow-hidden gap-[0.5%]'>
+          <div className='lg:flex sm:flex-row w-lvw h-fit overflow-hidden sm:gap-[10%] lg:gap-[0.5%]'>
             <Link to='/celebraterecovery'>
-            <div className=' group w-[29vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            <div className=' group sm:w-lvw lg:w-[29vw] sm:h-[25vh] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={CR}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Celebrate Recovery</h3></div>
@@ -98,7 +102,7 @@ function Home() {
             </Link>
 
 
-            <div className=' group w-[69vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[25vh] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover -translate-x-[0.1%] w-[106%] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={MOW}></img>
               <div className='w-[96%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Meals on Wheels</h3></div>
@@ -107,9 +111,9 @@ function Home() {
             </div>
           </div>
 
-            <div className='flex w-lvw h-fit overflow-hidden gap-[0.5%] mt-[0.5%]'>
+            <div className='lg:flex sm:flex-row w-lvw h-fit overflow-hidden sm:gap-[10%] lg:gap-[0.5%] mt-[0.5%]'>
 
-            <div className=' group w-[69vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[25vh] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={NSH}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Nepal Shalom House</h3></div>
@@ -118,7 +122,7 @@ function Home() {
               </div>
             </div>
 
-            <div className=' group w-[29vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            <div className=' group sm:w-lvw lg:w-[29vw] sm:h-[25vh] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={WWA}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Wiser with Age</h3></div>
@@ -129,15 +133,15 @@ function Home() {
           </div>
         </div>
 
-        <div className='w-4/5 mx-auto mt-[7%]'>
-          <div className='mx-[10%] w-7/12'>
+        <div className='sm:w-4/5 mx-auto mt-[7%]'>
+          <div className='lg:mx-[10%] sm:w-full lg:w-7/12'>
 
           <h5>Our Mission</h5>
           <h1 className='mt-[2%]'>Change that extends past the community</h1>
           <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           </div>
 
-          <div className='mt-[10%] grid grid-cols-2  w-10/12 mx-[10%] gap-[5%]'>
+          <div className='mt-[10%] grid sm:grid-rows-2 sm:gap-[50%] lg:grid-cols-2 lg:w-10/12 lg:mx-[10%] gap-[5%]'>
             <div className=''>
               <h5>Our Mission</h5>
               <h4 className='mt-[3%]'>Strong communities where individuals are living to their full potential, thriving, and serving other communities.</h4>
@@ -151,16 +155,16 @@ function Home() {
           </div>
 
           {/* Line */}
-          <div className='w-4/5 mx-auto my-[10%]'>
+          <div className='lg:w-4/5 mx-auto sm:mt-[10vh] sm:mb-[5vh] lg:my-[10%]'>
           <div className='border-b-2 border-black'></div>
           </div>
 
 
-          <div className='flex w-4/5 mx-auto gap-[2%] h-[100%]'>
+          <div className='lg:flex sm:flex-rows lg:w-4/5 mx-auto gap-[2%] h-[100%]'>
 
-            <div className='w-7/12 '>
+            <div className='lg:w-7/12 sm:w-full'>
             <h5>Join us in</h5>
-            <h1 className='mt-[2%]'>Growing physically, spiritually, mentally, emotionally, and economically.</h1>
+            <h1 className='mt-[2%] lg:text-inherit sm:text-[6vw]'>Growing physically, spiritually, mentally, emotionally, and economically.</h1>
             <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/team'><h4 className='group-hover:text-white ease-in-out duration-300'>Meet the team</h4></Link></button>
             
             {/* <div className='flex mt-[7%] gap-[1%]'>
@@ -171,16 +175,18 @@ function Home() {
 
             </div>
 
-            <div className='h-fit w-6/12 overflow-hidden'>
+            <div className='sm:mt-[10%] h-fit lg:w-6/12 overflow-hidden'>
             <img className='object-cover w-full h-[45lvh]' src={Team}></img>
             </div>
 
           </div>
 
-              {/* Line */}
-              <div className='w-4/5 mx-auto my-[10%]'>
+
+          {/* Line */}
+          <div className='lg:w-4/5 mx-auto sm:mt-[5vh] sm:mb-[5vh] lg:my-[10%]'>
           <div className='border-b-2 border-black'></div>
           </div>
+
         </div>
 
        <div className='flex max-w-[100vw] h-[50lvh] gap-[0.5%] overflow-hidden'>
@@ -189,10 +195,10 @@ function Home() {
           <img className='h-full w-full object-cover' src={Sl3}></img>
         </div> 
 
-        <div className='w-5/6 mt-[7%] mx-auto'>
-          <div className='ml-[36%]'>
+        <div className='sm:w-full lg:w-5/6 mt-[7%] mx-auto'>
+          <div className='sm:mx-[10%] lg:ml-[36%]'>
           <h5> Here's how</h5>
-          <h1 className='mt-[1%] w-9/12'>We’re building the leaders of tomorrow.</h1>
+          <h1 className='mt-[1%] sm:w-full lg:w-9/12'>We’re building the leaders of tomorrow.</h1>
 
             <div class='grid grid-cols-3 mt-[10%] gap-[3%]'>
 
@@ -214,7 +220,14 @@ function Home() {
 
             </div>
 
-            <div className='flex mt-[10%] gap-[0.5%]'>
+            <div className='desktopHide mt-[10%] h-full w-full '>
+              <div className=' w-fit mx-auto'>
+                <button className='desktopHide group sm:mt-[10%] lg:mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><h4 className='group-hover:text-white ease-in-out duration-300 desktopHide border-0'><ScrollToTopButton
+                Content= <h4>Back to top</h4> className='text-[3vw] border-0 border-white group-hover:text-white'></ScrollToTopButton></h4></button>
+              </div>
+            </div>
+
+            <div className='flex mt-[10%] gap-[0.5%] mobileHide'>
             <ScrollToTopButton
             Content="Back to Top"/>
             <div className='my-auto hover:text-black' style={{color: '#6b7280', fontSize:'1.2vw'}}><GoArrowUpRight /></div>

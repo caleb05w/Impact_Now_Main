@@ -287,6 +287,19 @@ button.dropdown-toggle.btn.btn-primary {
     border: transparent;
     color:transparent;
     box-shadow: none;
+    opacity:0;
+    cursor:none;
+}
+
+.desktopHide:hover {
+    height:0;
+    overflow:hidden;
+    background: none;
+    opacity: 0;
+    border: transparent;
+    color:transparent;
+    box-shadow: none;
+    cursor:unset
 }
 
 
@@ -310,7 +323,7 @@ button.dropdown-toggle.btn.btn-primary {
 
   /*mobile */
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
 
 #navbar {
     font-size: 2vw;
@@ -334,15 +347,29 @@ span {
     border: transparent;
     color:transparent;
     box-shadow: none;
+    width:0;
+    transform: translateY(-100px);
 }
+
 
 .desktopHide {
     height: fit-content;
     overflow:show;
     background: inherit;
-    border: 0;
     color:inherit;
+    border: inherit;
     box-shadow:inherit;
+    opacity: inherit
+}
+
+.desktopHide:hover {
+    height: fit-content;
+    overflow:show;
+    background: inherit;
+    color:inherit;
+    border: inherit;
+    box-shadow:inherit;
+    opacity: inherit
 }
 
 .headingHover{
@@ -387,6 +414,14 @@ h1 {
     font-size: 2.5vw;
     color:white;
 }
+
+
+h4 {
+    font-size: 3vw;
+    color:black;
+}
+
+
   }
 
 

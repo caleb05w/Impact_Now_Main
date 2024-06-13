@@ -5,11 +5,11 @@ import WWA from '../assets/WWA.png'
 import MOW from '../assets/MOW.png'
 import NSH from '../assets/NSH.png'
 import '../output.css'
-import Project from '../Components/Project'
-import ProjectLeft from '../Components/ProjectLeft'
-import ProjectCR from '../Components/ProjectCR'
+import Project from '../../Components/Project'
+import ProjectLeft from '../../Components/ProjectLeft'
+import ProjectCR from '../../Components/ProjectCR'
 import video from '../assets/BG1.gif'
-import EmailForm from '../Components/Email'
+import EmailForm from '../../Components/Email'
 
 
 
