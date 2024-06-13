@@ -18,8 +18,8 @@ function Footer() {
                 </ul>
                 <ul className='flex flex-col gap-1'> 
                 <ul id='footer'><Link to='/Policy'> Privacy Policy </Link></ul>
-                  <Link to='/minutes' className='mobileHide'> Minutes </Link>
-                  <Link to='/Finance' className='mobileHide'> Finances </Link>
+                  <Link to='/logistics' className='mobileHide'> Other </Link>
+                 
                 </ul>
         </div>
 

@@ -26,8 +26,9 @@ function Navbar() {
             <ul id='navbar'><Link to='/team'> Our Team </Link></ul>
 
             <ul id='navbar'><Link to='/donate'> Donate </Link></ul>
+           < ul id='navbar'><Link to='/logistics'> Other </Link></ul>
 
-            <Dropdown>
+            {/* <Dropdown>
                   <Dropdown.Toggle  id="dropdown-basic" className="no-arrow">
                     <div className='flex flex-row gap-1 w-fit h-fits'>
                       <ul id='navbar'> Other </ul>
@@ -40,7 +41,7 @@ function Navbar() {
                 <Dropdown.Item ><ul id='navbar'><Link to='/Minutes'> Meeting Minutes</Link></ul></Dropdown.Item>
                 <Dropdown.Item ><ul id='navbar'><Link to='/Finance'> Finances</Link></ul></Dropdown.Item>
               </Dropdown.Menu>
-            </Dropdown>
+            </Dropdown> */}
 
           </div>
       </div>

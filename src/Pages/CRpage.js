@@ -18,7 +18,7 @@ function CRPage() {
   return (
 <div className='overflow-x-hidden'>
 
-  <div className='w-lvw h-[25vw]'><img src={bg}></img> </div>
+  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg}></img> </div>
   
     <div className='w-4/5 mt-[2%] mx-auto'>
         <div className='mx-[10%] w-10/12'>
@@ -62,8 +62,8 @@ function CRPage() {
           <div className='flex mt-[7%] gap-[1%] mx-0 p-0'>
           <div className='my-auto' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowLeft /></div>
             <button><h5 className='m-0 p-0 gap-0 w-fit h-fit'> <Link to='/'>Go Back</Link></h5></button>
-            
-            </div>
+          </div>
+          
         </div>
 
         </div>

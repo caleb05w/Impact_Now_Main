@@ -4,8 +4,8 @@ import { Finances } from '../assets/Meetinglist';
 
 function Finance() {
   return (
-    <div className='bg-gray-300 w-full py-10 pb-[20%] '>
-        <div className='m-auto mb-10 p-16 bg-white  w-4/5'>
+    <div className='w-fi '>
+        <div className='border-black border-2'>
             <h1> Finances</h1>
             <h5>Click to download each report</h5>
 
