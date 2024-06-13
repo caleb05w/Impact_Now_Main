@@ -13,7 +13,7 @@ function Footer() {
                 </ul>
                 <img className="object-contain h-10 w-fit" src={Logo}/> 
                 <ul className='flex flex-col gap-1'> 
-                <ul id='footer'><Link to='/about'> About </Link></ul>
+                {/* <ul id='footer'><Link to='/about'> About </Link></ul> */}
                   <Link to='/team' className='mobileHide'>  Meet the Team </Link>
                 </ul>
                 <ul className='flex flex-col gap-1'> 

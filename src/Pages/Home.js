@@ -4,6 +4,7 @@ import CR from '../assets/CR.png'
 import WWA from '../assets/WWA.png'
 import MOW from '../assets/MOW.png'
 import NSH from '../assets/NSH.png'
+import Video from '../assets/BG1.gif'
 import '../output.css'
 
 
@@ -27,20 +28,20 @@ import ScrollToTopButton from '../Components/ScrollTopButton';
 function Home() {
 
   return (
-    <div className='pb-20 bg-gray-200 overflow-x-hidden'> 
+    <div className='pb-20  bg-gray-200 overflow-x-hidden'> 
     {/* //div for bg color */}
   
           {/* Background Video */}
     <div className='overflow-hidden absolute w-full sm:min-h-lvh lg:h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={NSH}></img>
+             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={Video}></img>
         </div>
       </div>
   </div>
 
     
-    <div className='m-auto pt-[2%]'>
+    <div className='m-auto pt-[9%]'>
       {/* bg-white border-gray-200 border-2 rounded-lg shadow-lg */}
 
     <div className='w-full h-full object-cover flex justify-center z-20'>
@@ -65,7 +66,7 @@ function Home() {
         {/* Projects */}
       <div className=''>
       
-      <div className='h-fit w-fit mt-[19%]'>
+      <div className='h-fit w-fit mt-[12%]'>
 
         <div className='w-4/5 m-auto'>
           <div className='mx-[10%] w-5/12'>
@@ -86,6 +87,7 @@ function Home() {
         <div className='mt-[6%]  w-lvw  h-full'>
 
           <div className='flex w-lvw h-fit overflow-hidden gap-[0.5%]'>
+            <Link to='/celebraterecovery'>
             <div className=' group w-[29vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={CR}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
@@ -93,6 +95,7 @@ function Home() {
                 <div className='relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Celebrate Recovery (CR) is a biblically-based program that helps people overcome Hurts, Hang-ups, and Habits</h5></div>
               </div>
             </div>
+            </Link>
 
 
             <div className=' group w-[69vw] h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
@@ -187,8 +190,9 @@ function Home() {
         </div> 
 
         <div className='w-5/6 mt-[7%] mx-auto'>
-          <div className='ml-[35%]'>
-          <h1 className='mt-[2%] w-9/12'>We’re building the leaders of tomorrow.</h1>
+          <div className='ml-[36%]'>
+          <h5> Here's how</h5>
+          <h1 className='mt-[1%] w-9/12'>We’re building the leaders of tomorrow.</h1>
 
             <div class='grid grid-cols-3 mt-[10%] gap-[3%]'>
 

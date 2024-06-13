@@ -4,6 +4,9 @@ import Kamal from '../assets/Kamal.jpg'
 import Vish from '../assets/Vish.png'
 import TeamTog from '../Components/TeamTog'
 import '../input.css'
+import { Link } from 'react-router-dom';
+import ScrollToTopButton from '../Components/ScrollTopButton';
+import { GoArrowUpRight } from 'react-icons/go';
 
 
 
@@ -90,56 +93,84 @@ function Team() {
 
 
   return (
-    <div className=' w-full min-h-screen lg:py-10 md:pb-10 '>
-        <div className='m-auto mb-10 p-10 bg-white lg:w-4/5 md:w-12/12 h-fit'>
-            <div className='text-center pt-10'>
-                <h1> Meet the Team </h1>
-                <h5 className=' md:pb-10'> Some body text about the team goes here.</h5>
-{/* 
-                <div className="grid grid-cols-2 mt-20 w-[50%] mx-auto">
-                    <button className='projectButtonTeam'>About Us</button>
-                    <button className='projectButtonTeam'>Get Involved</button>
-                </div>  */}
+    <div className=' w-full min-h-screen lg:py-10 mb-[8%] '>
+        <div className='w-4/5 m-auto'>
+          <div className='mt-[13%] mx-[10%] w-5/12'>
+          <h5>Our Team</h5>
+          <h1 className='mt-[2%]'>Meet the people behind the change.</h1>
+          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/team'><h4 className='group-hover:text-white ease-in-out duration-300'>How to get involved</h4></Link></button>
+          </div>
+        </div>
+
+        <div className='mt-[8%] flex max-w-[100vw] h-[60lvh] gap-[0.5%] overflow-hidden'>
+
+          <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase1}>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal}></img>
+              <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
+              <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>President</h5></div>
+              <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Kamal Ghamal</h3></div>
+              </div>
             </div>
 
-
-{/* I want to be able to look at his face wihtout having to look away} */}
-            
-
-            <div className='max-h-[100%] overflow-hidden lg:translate-y-[25%]'>
-                <div className='w-fit grid grid-cols-3 lg:gap-8 md:gap-2'>
-                
-                    <div className='text-center'>
-                    <h3> Kamal Ghamal</h3>
-                    <h5> President </h5>
-                    <img className='object-cover w-full max-h-[70%] ' src={Kamal} onClick={handleCase1} ></img>
-                    </div>
-
-                                    
-                    <div className='text-center'>
-                    <h3> Vishwa Mohan</h3>
-                    <h5> Treasurer </h5>
-                    <img className='object-cover w-full lg:max-h-[70%] md:h-[100%]]' src={Vish} onClick={handleCase2}></img>
-                    </div>
-
-                                    
-                    <div className='text-center'>
-                    <h3> Emily Kajioka </h3>
-                    <h5> Secretary </h5>
-                    <img className='object-cover w-full max-h-[70%]' src={Kamal} onClick={handleCase3}></img>
-                    </div>
-
-                </div>
+            <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase2}>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Vish}></img>
+              <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
+              <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>Treasurer</h5></div>
+              <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Vishwa Mohan</h3></div>
+              </div>
             </div>
-  
 
-            
+            <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase3}>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal}></img>
+              <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
+              <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>Secretary</h5></div>
+              <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Emily Kajioka</h3></div>
+              </div>
+            </div>
+        </div>
             <div ref={case1Ref}>
             {profile}
             </div>
+
+
+
+
+          <div className='w-5/6 mt-[7%] mx-auto'>
+          <div className='ml-[36%]'>
+          <h5> Here's how</h5>
+          <h1 className='mt-[1%] w-9/12'>We’re building the leaders of tomorrow.</h1>
+
+            <div class='grid grid-cols-3 mt-[10%] gap-[3%]'>
+
+              <div className=''> 
+                <h4 id='heavy'>Compassion</h4>
+                <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
+              </div>
+
+              <div className=''> 
+                <h4 id='heavy' >Leadership Development</h4>
+                <h5 className='mt-[5%]'>We collaborate together to empower others to develop their full potentials, strengths, skills and help pursue their passions.</h5>
+                </div>
+
+              <div className=''> 
+                <h4 id='heavy' >Building Communities/Planting Churches</h4>
+                <h5 className='mt-[5%]'>We care for every individual with compassion, respect, and equality.
+                </h5>
+              </div>
+
+            </div>
+
+            <div className='flex mt-[10%] gap-[0.5%]'>
+            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit'> <Link to='/'>Go Back</Link></h5></button>
+            <div className='my-auto hover:text-black' style={{color: '#6b7280', fontSize:'1.2vw'}}><GoArrowUpRight /></div>
+            </div>
+          </div>
         </div>
-      
-    </div>
+
+
+        </div>
+
   )
 }
 
