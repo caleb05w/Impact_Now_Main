@@ -89,7 +89,7 @@ function Home() {
         {/*Showcase of projects */}
 
         <div className='lg:mt-[6%] sm:mt-[13%] w-lvw  h-full'>
-        <div className='sm:mx-auto '>
+        <div className='sm:mx-auto'>
 
           <div className=' lg:flex sm:flex-row lg:w-lvw sm:w-[95%] sm:mx-[2%] lg:mx-0  h-fit overflow-hidden lg:gap-[0.5%]'>
             <Link to='/celebraterecovery'>
@@ -132,8 +132,11 @@ function Home() {
          
 
             <div className='sm:mx-auto'>
+              
             <div className=' lg:flex sm:flex-row lg:w-lvw sm:w-[95%] lg:mt-[0.5%] sm:mx-[2%] lg:mx-0  h-fit overflow-hidden lg:gap-[0.5%]'>
-            <div className=' group mobileHide up sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%]  lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            
+            
+            <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%]  lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={NSH}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Nepal Shalom House</h3></div>
@@ -143,7 +146,7 @@ function Home() {
                 <div className='relative top-[75%] opacity-100'><h1 className='text-white font-[600] text-[5.5vw]'>Nepal Shalom House</h1></div>
                 <div className='relative top-[75%] mt-[2%]'><h5 className='text-white text-[2.5vw]'>Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education</h5></div>
                 </div>
-                </div>
+              </div>
                 
                 <div className='mobileHide relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>
                 Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education.</h5></div>
@@ -171,14 +174,14 @@ function Home() {
         </div>
 
         <div className='sm:w-4/5 mx-auto mt-[7%]'>
-          <div className='lg:mx-[10%] mobileHide [10%] sm:w-full lg:w-7/12'>
+          <div className='lg:mx-[10%] mobileHide sm:w-full lg:w-7/12'>
 
           <h5>Our Mission</h5>
           <h1 className='mt-[2%]'>Change that extends past the community</h1>
           <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           </div>
 
-          <div className='mt-[10%] grid sm:grid-rows-2 sm:gap-[50%] lg:grid-cols-2 lg:w-10/12 lg:mx-[10%] gap-[5%]'>
+          <div className='mt-[10%] grid sm:grid-rows-2 sm:gap-[50%] lg:grid-cols-2 lg:w-10/12 lg:mx-[10%] lg:gap-[5%]'>
             <div className=''>
               <h5>Our Mission</h5>
               <h4 className='mt-[3%]'>Strong communities where individuals are living to their full potential, thriving, and serving other communities.</h4>
@@ -232,7 +235,7 @@ function Home() {
           <img className='h-full w-full object-cover' src={Sl3}></img>
         </div> 
 
-        <div className='sm:w-full lg:w-5/6 mt-[7%] mx-auto'>
+        <div className='sm:w-full lg:w-6/6 mt-[7%] mx-auto'>
           <div className='sm:mx-[10%] lg:ml-[36%]'>
           <h5> Here's how</h5>
           <h1 className='mt-[1%] sm:w-full lg:w-9/12'>We’re building the leaders of tomorrow.</h1>
@@ -269,7 +272,7 @@ function Home() {
             Content="Back to Top"/>
             <div className='my-auto hover:text-black' style={{color: '#6b7280', fontSize:'1.2vw'}}><GoArrowUpRight /></div>
             </div>
-          </div>Go
+          </div>
         </div>
 
 
