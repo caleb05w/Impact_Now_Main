@@ -1,6 +1,6 @@
 // import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 
 
 //pages
@@ -16,6 +16,7 @@ import Navbar from './Components/Navbar.js'
 import Footer from './Components/Footer.js'
 import ScrollToTop from './Components/ScrollToTop.js'
 import Logistics from "./Pages/Logistics.js";
+import AnimatedRoutes from "./Components/AnimatedRoutes.js";
 
 function App() {
   return (
@@ -23,15 +24,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        {/* <Route exact path='/about' element={<About />} /> */}
-        <Route exact path='/donate' element={<Donate />} />
-        <Route exact path='/Logistics' element={<Logistics/>} />
-        <Route exact path='/policy' element={<Policy/>} />
-        <Route exact path='/team' element={<Team/>} />
-        <Route exact path='/celebraterecovery' element={<CelebrateRecovery/>} />
-      </Routes>
+        <AnimatedRoutes />
       <Footer />
     </Router>
     </div>

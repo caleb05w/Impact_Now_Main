@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 import ScrollToTopButton from '../Components/ScrollTopButton';
 import { GoArrowUpRight } from 'react-icons/go';
 
+import { motion } from 'framer-motion';
+
 
 
 function Team() {
@@ -91,15 +93,34 @@ function Team() {
 
 
 
-
   return (
-    <div className=' w-full min-h-screen lg:py-10 mb-[8%] '>
+    <motion.div className=' w-full  min-h-screen lg:py-10 mb-[8%] '
+    
+     //exiting donate, entering team.
+
+
+    initial={{ opacity: 0, x: 400 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0,  x: -400}}
+    transition={{
+      initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+      animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+      exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+      delay: 0.6
+    }}
+    
+
+    // ease: "easeInOut"
+    
+    
+    
+    >
         <div className='w-4/5 m-auto'>
           <div className='mt-[13%] mx-[10%] w-5/12'>
           <h5>Our Team</h5>
           <h1 className='mt-[2%]'>Meet the people behind the change.</h1>
           <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
-          <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/team'><h4 className='group-hover:text-white ease-in-out duration-300'>How to get involved</h4></Link></button>
+          <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/donate'><h4 className='group-hover:text-white ease-in-out duration-300'>How to get involved</h4></Link></button>
           </div>
         </div>
 
@@ -169,7 +190,7 @@ function Team() {
         </div>
 
 
-        </div>
+        </motion.div>
 
   )
 }

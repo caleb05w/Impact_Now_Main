@@ -7,13 +7,29 @@ import donate5 from '../assets/donate5.png'
 
 import { GoArrowRight, GoArrowLeft } from 'react-icons/go'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 
 
 function Donate() {
+
+
+  
   return (
     //  <div className='w-full h-lvh' style={{ backgroundImage: `url(${background})`}}>
-     <div className= 'w-full h-fit bg-cover'>
+     <motion.div className= 'w-full h-fit bg-cover'
+     
+     initial={{ opacity: 0, x: 400 }}
+     animate={{ opacity: 1, x: 0 }}
+     exit={{ opacity: 0,  x: -400}}
+     transition={{
+       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+       animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+       exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+       delay: 0.6
+     }}
+     
+     >
     {/* <div class='absolute -z-index-10inset-0 w-full h-full bg-black opacity-70'> </div> */}
      
   
@@ -229,7 +245,7 @@ function Donate() {
 
             
         
-    </div>
+    </motion.div>
   )
 }
 

@@ -20,6 +20,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import EmailForm from '../Components/Email'
 import ScrollToTopButton from '../Components/ScrollTopButton';
 
+import { motion } from "framer-motion";
 
 
 
@@ -28,7 +29,13 @@ import ScrollToTopButton from '../Components/ScrollTopButton';
 function Home() {
 
   return (
-    <div className='pb-20  bg-gray-200 overflow-x-hidden'> 
+    <motion.div className='pb-20  bg-gray-200 overflow-x-hidden'
+    
+  initial={{ opacity: 0, transform: 'translateY(100vh)', duration: 0.5, transition: "ease-in-out"}}
+  animate={{ opacity: 1, transform: 'translateY(0vh)', duration: 0.5, transition: "ease-in-out"}}
+  exit={{ opacity: 0, transform: 'translateY(100vh)', duration: 0.5, transition: "ease-in-out"}}
+    
+    > 
     {/* //div for bg color */}
   
           {/* Background Video */}
@@ -56,8 +63,8 @@ function Home() {
           <h5 className=' mt-[8%] z-10 text-white sm:text-[3.5vw] lg:text-[1.2vw]'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="md:grid-rows-2 sm:gap-2 grid lg:grid-cols-2 mt-10">
-          <button className='headingHover sm:w-full'>About Us</button>
-          <button className='headingHover sm:w-full '>Get Involved</button>
+          <button className='headingHover sm:w-full'><Link to='/team'>About Us</Link></button>
+          <button className='headingHover sm:w-full '><Link to='/donate'>tGet Involved</Link></button>
           </div>
           </div>
         </div>
@@ -287,7 +294,7 @@ function Home() {
     {/* <EmailForm /> */}
 
     
-    </div>
+    </motion.div>
     // div for bg color
 
 
