@@ -21,14 +21,15 @@ function Donate() {
 
      //works: exiting our team, going into donate
      
-     initial={{ opacity: 0, x: 400 }}
-     animate={{ opacity: 1, x: 0 }}
-     exit={{ opacity: 0,  x: -400}}
+
+     initial={{ opacity: 0, y: 400 }}
+     animate={{ opacity: 1, y: 0 }}
+     exit={{ opacity: 0,  y: -400}}
      transition={{
-       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
        animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-       exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.6 },
-      //  delay: 0.6
+       exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+       
      }}
      
      >

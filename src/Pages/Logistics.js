@@ -7,12 +7,26 @@ import { Finances } from '../assets/Meetinglist';
 import { GoArrowLeft } from 'react-icons/go'
 import FinanceHolder from '../Components/FinanceHolder';
 
+import { motion } from 'framer-motion';
 
 
 
 function Logistics() {
   return (
-    <div className='lg:pt-[12%]'>
+    <motion.div className='lg:pt-[12%]'
+    
+    initial={{ opacity: 0, y: 400 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0,  y: -400}}
+    transition={{
+      initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
+      animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+      exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+      
+    }}
+    
+    
+    >
          {/* className=' sm:mt-[20%] lg:pt-[12%] */}
 
     <div className='min-h-lvh w-full'>
@@ -93,7 +107,7 @@ function Logistics() {
 
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

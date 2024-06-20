@@ -6,13 +6,27 @@ import { Link } from 'react-router-dom'
 import CR1 from '../assets/CR1.png'
 import CR2 from '../assets/CR2.png'
 import bg from '../assets/CRbg.png'
+import { motion } from 'framer-motion'
 
 
 
 
 function CRPage() {
   return (
-<div className='overflow-x-hidden'>
+<motion.div className='overflow-x-hidden'
+
+initial={{ opacity: 0, y: 400 }}
+animate={{ opacity: 1, y: 0 }}
+exit={{ opacity: 0,  y: -400}}
+transition={{
+  initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
+  animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+  exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+  
+}}
+
+
+>
 
   <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg}></img> </div>
   
@@ -79,7 +93,7 @@ function CRPage() {
 
 
 
-  </div>
+  </motion.div>
   )
 }
 

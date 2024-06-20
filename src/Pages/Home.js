@@ -30,10 +30,16 @@ function Home() {
 
   return (
     <motion.div className='pb-20  bg-gray-200 overflow-x-hidden'
-    
-  initial={{ opacity: 0, transform: 'translateY(100vh)', duration: 0.5, transition: "ease-in-out"}}
-  animate={{ opacity: 1, transform: 'translateY(0vh)', duration: 0.5, transition: "ease-in-out"}}
-  exit={{ opacity: 0, transform: 'translateY(100vh)', duration: 0.5, transition: "ease-in-out"}}
+
+    initial={{ opacity: 0, y: 400 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0,  y: -400}}
+    transition={{
+      initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
+      animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
+      exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+      
+    }}
     
     > 
     {/* //div for bg color */}
@@ -64,7 +70,7 @@ function Home() {
 
           <div className="md:grid-rows-2 sm:gap-2 grid lg:grid-cols-2 mt-10">
           <button className='headingHover sm:w-full'><Link to='/team'>About Us</Link></button>
-          <button className='headingHover sm:w-full '><Link to='/donate'>tGet Involved</Link></button>
+          <button className='headingHover sm:w-full '><Link to='/donate'>Get Involved</Link></button>
           </div>
           </div>
         </div>
