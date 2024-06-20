@@ -106,7 +106,7 @@ function Team() {
       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
       animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
       exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-      delay: 0.6
+      // delay: 0.3
     }}
     
 

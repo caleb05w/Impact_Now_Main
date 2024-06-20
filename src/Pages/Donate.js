@@ -18,6 +18,8 @@ function Donate() {
   return (
     //  <div className='w-full h-lvh' style={{ backgroundImage: `url(${background})`}}>
      <motion.div className= 'w-full h-fit bg-cover'
+
+     //works: exiting our team, going into donate
      
      initial={{ opacity: 0, x: 400 }}
      animate={{ opacity: 1, x: 0 }}
@@ -25,8 +27,8 @@ function Donate() {
      transition={{
        initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
        animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-       exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-       delay: 0.6
+       exit: { type: 'spring', stiffness: 100, damping: 40, duration: 0.6 },
+      //  delay: 0.6
      }}
      
      >
