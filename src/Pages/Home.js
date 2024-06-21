@@ -5,6 +5,10 @@ import WWA from '../assets/WWA.png'
 import MOW from '../assets/MOW.png'
 import NSH from '../assets/NSH.png'
 import Video from '../assets/BG1.gif'
+import build from '../assets/build.png'
+import equip from '../assets/equip.png'
+import compassion from '../assets/compassion.png'
+
 import '../output.css'
 
 
@@ -38,6 +42,7 @@ function Home() {
       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
       animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
       exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+    delay: 0.2
       
     }}
     
@@ -125,7 +130,8 @@ function Home() {
             </Link>
 
 
-            <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
+            <Link to='/MealsOnWheels'> 
+            <div className='group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover -translate-x-[0.1%] w-[106%] h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={MOW}></img>
               <div className='w-[96%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Meals on Wheels</h3></div>
@@ -140,15 +146,16 @@ function Home() {
                 <div className='mobileHide relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Meals On Wheels delivers weekly nutritious meals donated by local Riachmond businesses to seniors living alone. They connect with valued members of our community, supporting their physical, emotional, and spiritual well-being. </h5></div>
               </div>
             </div>
+            </Link>
 
             </div>
+            
          
 
             <div className='sm:mx-auto'>
-              
             <div className=' lg:flex sm:flex-row lg:w-lvw sm:w-[95%] lg:mt-[0.5%] sm:mx-[2%] lg:mx-0  h-fit overflow-hidden lg:gap-[0.5%]'>
             
-            
+            <Link to='/NepalShalomHouse'> 
             <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%]  lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={NSH}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
@@ -165,7 +172,9 @@ function Home() {
                 Shalom House works to provide sponsorships to underprivileged girls from the poorest of the poor Nepalese communities and focuses on overcoming barriers so that young women can advance to a post secondary education.</h5></div>
               </div>
             </div>
+            </Link>
 
+            <Link to='/WiserWithAge'> 
             <div className=' group sm:w-lvw lg:w-[29vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
               <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={WWA}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
@@ -181,6 +190,7 @@ function Home() {
                 <div className='mobileHide relative top-[85%] group-hover:top-[89%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white text-[0.9vw]'>Wiser With Age is a community-based mentorship program that matches seniors with young adults.</h5></div>
               </div>
             </div>
+            </Link>
           </div>
           </div>
         </div>
@@ -251,29 +261,32 @@ function Home() {
         <div className='sm:w-full lg:w-6/6 mt-[7%] mx-auto'>
           <div className='sm:mx-[10%] lg:ml-[36%]'>
           <h5> Here's how</h5>
-          <h1 className='mt-[1%] sm:w-full lg:w-9/12'>We’re building the leaders of tomorrow.</h1>
+          <h1 className='mt-[1%] sm:w-full lg:w-11/12'>The values that drive us to keep pushing forwards</h1>
 
-            <div class='grid grid-cols-3 mt-[10%] gap-[3%]'>
+            <div class='grid grid-cols-3 mt-[10%] gap-[5%]'>
 
               <div className=''> 
-                <h4 id='heavy'>Compassion</h4>
+                <img src={compassion} className=''></img>
+                <h4 id='heavy' className='mt-[10%]'>Compassion</h4>
                 <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
               </div>
 
               <div className=''> 
-                <h4 id='heavy' >Leadership Development</h4>
-                <h5 className='mt-[5%]'>We collaborate together to empower others to develop their full potentials, strengths, skills and help pursue their passions.</h5>
+              <img src={build} className=''></img>
+                <h4 id='heavy' className='mt-[10%]' >Build</h4>
+                <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
                 </div>
 
               <div className=''> 
-                <h4 id='heavy' >Building Communities/Planting Churches</h4>
-                <h5 className='mt-[5%]'>We care for every individual with compassion, respect, and equality.
+              <img src={equip} className=''></img>
+                <h4 id='heavy'className='mt-[10%]'  >Equip</h4>
+                <h5 className='mt-[5%]'>We collaborate together to empower others to develop their full potentials, strengths, skills and help pursue their passions.
                 </h5>
               </div>
 
             </div>
 
-            <div className='desktopHide mt-[10%] h-full w-full '>
+            <div className='desktopHide mt-[5%] h-full w-full '>
               <div className=' w-fit mx-auto'>
                 <button className='desktopHide group sm:mt-[10%] lg:mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><h4 className='group-hover:text-white ease-in-out duration-300 desktopHide border-0'><ScrollToTopButton
                 Content= <h4>Back to top</h4> className='text-[3vw] border-0 border-white group-hover:text-white'></ScrollToTopButton></h4></button>

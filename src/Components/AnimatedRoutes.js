@@ -18,6 +18,9 @@ import ScrollToTop from './ScrollToTop.js'
 import Logistics from "../Pages/Logistics.js";
 
 import { AnimatePresence } from "framer-motion";
+import ShalomHouse from "../Pages/ShalomHouse.js";
+import WiserWithAge from "../Pages/WiserWithAge.js";
+import MealsOnWheels from "../Pages/MealsOnWheels.js";
 
 function AnimatedRoutes() {
 
@@ -33,6 +36,9 @@ const location = useLocation();
             <Route exact path='/policy' element={<Policy/>} />
             <Route exact path='/team' element={<Team/>} />
             <Route exact path='/celebraterecovery' element={<CelebrateRecovery/>} />
+            <Route exact path='/NepalShalomHouse' element={<ShalomHouse/>} />
+            <Route exact path='/WiserWithAge' element={<WiserWithAge/>} />
+            <Route exact path='/MealsOnWheels' element={<MealsOnWheels/>} />
         </Routes>
         
     </AnimatePresence>

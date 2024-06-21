@@ -26,9 +26,10 @@ function Donate() {
      animate={{ opacity: 1, y: 0 }}
      exit={{ opacity: 0,  y: -400}}
      transition={{
-       initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
-       animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-       exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+      initial: { type: 'inertia', velocity:10,  duration: 0.8},
+      animate: { type: 'inertia', velocity:10,  duration: 0.3 },
+      exit: { type: 'inertia', velocity:10, duration: 0.3 },
+      delay: 0.1
        
      }}
      
@@ -102,7 +103,7 @@ function Donate() {
 
               <div className='lg:mt-0 sm:mt-[4%]'> 
                 <h4 id='heavy' >Cheque and address</h4>
-                <h4 className='lg:mt-0 lg:mt-[4%] sm:mt-[1%] lg: mt-[5%] mobileHide'>Donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
+                <h4 className='lg:mt-[4%] sm:mt-[1%] lg: mt-[5%] mobileHide'>Donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
                 <h4 className='desktopHide'> Address to: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
 
                 
@@ -185,7 +186,7 @@ function Donate() {
 
             <div className='lg:mt-0 sm:mt-[4%]'> 
               <h4 id='heavy' >Cheque and address</h4>
-              <h4 className='lg:mt-0 lg:mt-[4%] sm:mt-[1%] lg: mt-[5%] mobileHide'>Donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
+            <h4 className=' lg:mt-[4%] sm:mt-[1%] lg: mt-[5%] mobileHide'>Donate by sending a check to the church address: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
               <h4 className='desktopHide'> Address to: Impact N.O.W. 6640 Blundell Rd.Richmond BC V7C 1H8</h4>
 
               

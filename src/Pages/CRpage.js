@@ -1,7 +1,7 @@
 import React from 'react'
 import Nicholas from '../assets/Nicholas.png'
 import Nicholas1 from '../assets/Nicholas1.png'
-import { GoArrowRight } from 'react-icons/go'
+import { GoArrowLeft, GoArrowRight } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import CR1 from '../assets/CR1.png'
 import CR2 from '../assets/CR2.png'
@@ -75,8 +75,8 @@ transition={{
           </h4>
 
           <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
+          <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowLeft /></div>
             <button><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide'> <Link to='/'>Go Back</Link></h5></button>
-            <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
             </div>
 
             <div className='desktopHide my-[5%] h-full w-full '>

@@ -103,9 +103,10 @@ function Team() {
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0,  y: -400}}
     transition={{
-      initial: { type: 'spring', stiffness: 100, damping: 40, duration: 0.8},
-      animate: { type: 'spring', stiffness: 100, damping: 40, duration: 0.3 },
-      exit: { type: 'spring', stiffness: 10, damping: 40, duration: 0.3 },
+      initial: { type: 'inertia', velocity:10,  duration: 0.8},
+      animate: { type: 'inertia', velocity:10,  duration: 0.3 },
+      exit: { type: 'inertia', velocity:10, duration: 0.3 },
+      delay: 0.1
     }}
     
 
@@ -156,7 +157,7 @@ function Team() {
 
 
 
-          <div className='w-5/6 mt-[7%] mx-auto'>
+          <div className='w-11/12 mt-[7%] mx-auto'>
           <div className='ml-[36%]'>
           <h5> Here's how</h5>
           <h1 className='mt-[1%] w-9/12'>We’re building the leaders of tomorrow.</h1>
