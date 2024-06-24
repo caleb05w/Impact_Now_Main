@@ -6,7 +6,7 @@ import TeamTog from '../Components/TeamTog'
 import '../input.css'
 import { Link } from 'react-router-dom';
 import ScrollToTopButton from '../Components/ScrollTopButton';
-import { GoArrowUpRight } from 'react-icons/go';
+import { GoArrowUpRight, GoArrowLeft } from 'react-icons/go';
 
 import { motion } from 'framer-motion';
 
@@ -116,15 +116,15 @@ function Team() {
     
     >
         <div className='w-4/5 m-auto'>
-          <div className='mt-[13%] mx-[10%] w-5/12'>
-          <h5>Our Team</h5>
+          <div className='lg:pt-[13%] sm:pt-[20%] mx-[10%] sm:w-full lg:w-5/12'>
+          <h5 className="mobileHide">Our Team</h5>
           <h1 className='mt-[2%]'>Meet the people behind the change.</h1>
-          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          <h4 className='mt-[5%]'>Impact N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><Link to='/donate'><h4 className='group-hover:text-white ease-in-out duration-300'>How to get involved</h4></Link></button>
           </div>
         </div>
 
-        <div className='mt-[8%] flex max-w-[100vw] h-[60lvh] gap-[0.5%] overflow-hidden'>
+        <div className='mt-[8%] flex gmax-w-[100vw] h-[60lvh] gap-[0.5%] overflow-hidden'>
 
           <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase1}>
               <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal}></img>
@@ -158,7 +158,7 @@ function Team() {
 
 
           <div className='w-11/12 mt-[7%] mx-auto'>
-          <div className='ml-[36%]'>
+          <div className='lg:ml-[36%] sm:mx-auto'>
           <h5> Here's how</h5>
           <h1 className='mt-[1%] w-9/12'>We’re building the leaders of tomorrow.</h1>
 
@@ -175,18 +175,27 @@ function Team() {
                 </div>
 
               <div className=''> 
-                <h4 id='heavy' >Building Communities/Planting Churches</h4>
+                <h4 id='heavy' >Building Communities</h4>
                 <h5 className='mt-[5%]'>We care for every individual with compassion, respect, and equality.
                 </h5>
               </div>
 
             </div>
 
-            <div className='flex mt-[10%] gap-[0.5%]'>
-            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit'> <Link to='/'>Go Back</Link></h5></button>
-            <div className='my-auto hover:text-black' style={{color: '#6b7280', fontSize:'1.2vw'}}><GoArrowUpRight /></div>
+
+            <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
+            <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowLeft /></div>
+            <button><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide'> <Link to='/'>Go Back</Link></h5></button>
             </div>
-          </div>
+
+            <div className='desktopHide my-[5%] h-full w-full '>
+            <div className=' w-fit m-auto'>
+               <button className='desktopHide mx-auto group sm:mt-[10%] lg:mt-[5%] px-4 py-2.5 bg-none rounded-full w-fit border-2 border-black hover:bg-black hover:text-white'><Link to='/'><h4 className='group-hover:text-white ease-in-out duration-300 desktopHide'>Go Back</h4></Link></button>
+            </div>
+            </div>
+
+        </div>
+
         </div>
 
 

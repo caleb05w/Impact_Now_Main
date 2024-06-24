@@ -53,9 +53,10 @@ function Home() {
     <div className='overflow-hidden absolute w-full sm:min-h-lvh lg:h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-             <img className='object-cover w-full sm:min-h-[80vh] lg:h-full opacity-40' src={Video}></img>
+             <img className='object-cover w-full sm:min-h-[80vh] md:min-h-[100vh] lg:h-full opacity-40' src={Video}></img>
         </div>
       </div>
+      
   </div>
 
     
@@ -65,17 +66,17 @@ function Home() {
     <div className='w-full h-full object-cover flex justify-center z-20'>
       <div className='text-center mx-25 my-20  w-2/3 z-20'>
         <div className='flex justify-center'>  
-          <div className='lg:h-[15%] lg:w-[15%] sm:h-[20vw] sm:w-[20vw]'>
+          <div className='lg:h-[15%] lg:w-[15%] md:[h-15vw] md:w-[20vw] sm:h-[20vw] sm:w-[20vw]'>
           <img className="w-full h-full object-cover" src={logo}></img>
           </div>
          </div>
-        <div className='lg:w-2/3 sm:w-10/12 mx-auto text-center z-10'>
+        <div className='lg:w-2/3 md:w-12/12 sm:w-10/12 mx-auto text-center z-10'>
           <h1 className='mt-[5%] z-10 text-white'> Impact N.O.W </h1>
-          <h5 className=' mt-[8%] z-10 text-white sm:text-[3.5vw] lg:text-[1.2vw]'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
+          <h5 className=' mt-[8%] z-10 text-white sm:text-[3.5vw] md:text-[2.5vw] lg:text-[25px]'> Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and in developing nations </h5>
 
           <div className="md:grid-rows-2 sm:gap-2 grid lg:grid-cols-2 mt-10">
           <button className='headingHover sm:w-full'><Link to='/team'>About Us</Link></button>
-          <button className='headingHover sm:w-full '><Link to='/donate'>Get Involved</Link></button>
+          <button className='headingHover sm:w-full'><Link to='/donate'>Get Involved</Link></button>
           </div>
           </div>
         </div>
@@ -83,14 +84,14 @@ function Home() {
 
         {/* Projects */}
       <div className=''>
-      
-      <div className='h-fit w-fit sm:mt-[20%] lg:mt-[12%]'>
+
+      <div className='h-fit w-fit lg:pt-[12%] md:pt-[20%] sm:pt-[30%]'>
 
         <div className='sm:full lg:w-4/5 m-auto'>
           <div className='mx-[10%] lg:w-5/12 sm:full'>
           <h5>Our Projects</h5>
           <h1 className='mt-[2%]'>We're telling more than just stories.</h1>
-          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          <h4 className='mt-[5%]'>Impact N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           
             <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
             <button><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide'> <Link to='/donate'>Learn how you can help out</Link></h5></button>
@@ -201,7 +202,7 @@ function Home() {
 
           <h5>Our Mission</h5>
           <h1 className='mt-[2%]'>Change that extends past the community</h1>
-          <h4 className='mt-[5%]'>ImpAct N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
+          <h4 className='mt-[5%]'>Impact N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           </div>
 
           <div className='mt-[10%] grid sm:grid-rows-2 sm:gap-[50%] lg:grid-cols-2 lg:w-10/12 lg:mx-[10%] lg:gap-[5%]'>
