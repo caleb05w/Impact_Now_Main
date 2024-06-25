@@ -12,9 +12,6 @@ import Team from '../Pages/Team.js'
 import CelebrateRecovery from '../Pages/CRpage.js'
 
 //Components
-import Navbar from './Navbar.js'
-import Footer from './Footer.js'
-import ScrollToTop from './ScrollToTop.js'
 import Logistics from "../Pages/Logistics.js";
 
 import { AnimatePresence } from "framer-motion";

@@ -16,7 +16,7 @@ function Navbar() {
     <div className="w-full h-fit fixed z-50 bg-white">
       <div className="w-4/5 m-auto h-fit py-[1.5%] grid grid-cols-2 items-center">
         <div className='flex w-full h-10'>
-        <img className="object-contain h-full w-fit mr-3 mb-5" src={Logo} />
+        <Link to='/'><img className="object-contain h-full w-fit mr-3 mb-5" src={Logo} /></Link>
         <h3 className='my-auto' id='navbar'> <Link to='/'> IMPACT NOW </Link></h3>
         </div>
 
