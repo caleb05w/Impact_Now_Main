@@ -90,7 +90,7 @@ function Home() {
         <div className='sm:full lg:w-4/5 m-auto'>
           <div className='mx-[10%] lg:w-5/12 sm:full'>
           <h5>Our Projects</h5>
-          <h1 className='mt-[2%]'>Testing with different text</h1>
+          <h1 className='mt-[2%]'>We're telling more then just stories.</h1>
           <h4 className='mt-[5%]'>Impact N.O.W. builds strong and sustainable communities by serving those living in need in Canada and developing nations.</h4>
           
             <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>

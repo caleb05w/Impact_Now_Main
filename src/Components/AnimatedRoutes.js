@@ -11,13 +11,15 @@ import Policy from '../Pages/Policy.js'
 import Team from '../Pages/Team.js'
 import CelebrateRecovery from '../Pages/CRpage.js'
 
-//Components
+//Componentsd
 import Logistics from "../Pages/Logistics.js";
 
 import { AnimatePresence } from "framer-motion";
 import ShalomHouse from "../Pages/ShalomHouse.js";
 import WiserWithAge from "../Pages/WiserWithAge.js";
 import MealsOnWheels from "../Pages/MealsOnWheels.js";
+
+import testing from '../Pages/testing.js'
 
 function AnimatedRoutes() {
 
