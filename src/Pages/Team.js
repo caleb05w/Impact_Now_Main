@@ -5,8 +5,7 @@ import Vish from '../assets/Vish.png'
 import TeamTog from '../Components/TeamTog'
 import '../input.css'
 import { Link } from 'react-router-dom';
-import ScrollToTopButton from '../Components/ScrollTopButton';
-import { GoArrowUpRight, GoArrowLeft } from 'react-icons/go';
+import { GoArrowLeft } from 'react-icons/go';
 
 import { motion } from 'framer-motion';
 
@@ -15,8 +14,8 @@ import { motion } from 'framer-motion';
 function Team() {
 
     const [currentCase, setCurrentCase] = useState(4);
-    const [animate, setAnimate] = useState(false);
-    const [showContent, setShowContent] = useState(true);
+    const [setAnimate] = useState(false);
+    const [showContent ] = useState(true);
 
     const scrollToRef = (ref) => {
         if (ref.current) {
@@ -127,7 +126,7 @@ function Team() {
         <div className='mt-[8%] flex gmax-w-[100vw] h-[60lvh] gap-[0.5%] overflow-hidden'>
 
           <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase1}>
-              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal}></img>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal} alt="Kamal"></img>
               <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
               <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>President</h5></div>
               <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Kamal Ghamal</h3></div>
@@ -135,7 +134,7 @@ function Team() {
             </div>
 
             <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase2}>
-              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Vish}></img>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Vish} alt="Vish"></img>
               <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
               <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>Treasurer</h5></div>
               <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Vishwa Mohan</h3></div>
@@ -143,7 +142,7 @@ function Team() {
             </div>
 
             <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase3}>
-              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal}></img>
+              <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal} alt="Emily"></img>
               <div className='w-[99%] -translate-y-[113%] h-[90%] my-auto mx-auto'>
               <div className='relative top-[100%] group-hover:top-[95.5%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h5 className='text-white font-[300] text-[1.1vw]'>Secretary</h5></div>
               <div className='relative top-[5%] group-hover:top-[0%] h-[100%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[550] text-[2vw]'>Emily Kajioka</h3></div>

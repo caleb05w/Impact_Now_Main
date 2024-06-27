@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 
 
 function TeamTog({name, bio, bio2, image, position}) {
@@ -13,7 +12,7 @@ return (
       <div className='grid sm:grid-rows-2 lg:grid-cols-2 h-fit'>
 
       <div className='max-h-[70vh] w-full'>
-          <img className='object-cover w-full h-full' src={image}></img>
+          <img className='object-cover w-full h-full' src={image} alt="Team member"></img>
       </div>
 
       <div className='m-10 w-fit h-full'>

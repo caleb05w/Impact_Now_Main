@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { HiBattery50 } from 'react-icons/hi2';
 
 function EmailForm() {
     const [formData, setFormData] = useState({

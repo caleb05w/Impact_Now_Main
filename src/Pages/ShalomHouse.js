@@ -1,10 +1,6 @@
 import React from 'react'
-import Nicholas from '../assets/Nicholas.png'
-import Nicholas1 from '../assets/Nicholas1.png'
-import { GoArrowRight, GoArrowLeft } from 'react-icons/go'
+import { GoArrowLeft } from 'react-icons/go'
 import { Link } from 'react-router-dom'
-import CR1 from '../assets/CR1.png'
-import CR2 from '../assets/CR2.png'
 import bg from '../assets/NSH_bg.png'
 import { motion } from 'framer-motion'
 
@@ -28,7 +24,7 @@ transition={{
 
 >
 
-  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg}></img> </div>
+  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg} alt="background"></img> </div>
   
     <div className='lg:w-4/6 sm:w-full sm:mt-[8%] lg:mt-[2%] mx-auto'>
         <div className='mx-[10%] w-10/12'>

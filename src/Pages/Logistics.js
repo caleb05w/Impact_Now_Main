@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { GoArrowRight } from 'react-icons/go'
 import { Meetinglist_2024, Meetinglist_2023, Meetinglist_2022, Meetinglist_2021 } from '../assets/Meetinglist';
 import Meetingtog from '../Components/Meetingtog';
 import { Finances } from '../assets/Meetinglist';

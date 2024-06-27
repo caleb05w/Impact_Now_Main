@@ -34,7 +34,7 @@ function Footer() {
 
       <div className='mobileHide grid grid-cols-2 pt-[10vh] pb-[15vh] sm:h-0 lg:h-fit'>
         <div className='w-[25vw]'> 
-          <img className='mt-[0%]'src = {Logo}></img>
+          <img className='mt-[0%]'src = {Logo} alt="logo"></img>
           <h4 className='mobileHide text-white mt-[20%]'>Impact N.O.W. builds strong and sustainable communities by serving individuals living in need in Canada and developing nations..</h4>
         </div>
 
@@ -71,8 +71,8 @@ function Footer() {
       <div className='mobileHide flex justify-between w-full h-fit pb-[10vh]'>
            @2024 IMPACT N.O.W Foundation
           <div className='flex translate-x-[-8vw]'>
-          <div className='text-4xl'> <a href="https://www.instagram.com/impactnow_2024/" target="_blank" ><FaSquareInstagram /></a></div>
-          <div className='text-4xl'> <a href="https://www.facebook.com/groups/331238719786607" target="_blank" ><FaFacebookSquare /></a></div>
+          <div className='text-4xl'> <a href="https://www.instagram.com/impactnow_2024/" target="_blank" rel="noreferrer"><FaSquareInstagram /></a></div>
+          <div className='text-4xl'> <a href="https://www.facebook.com/groups/331238719786607" target="_blank" rel="noreferrer"><FaFacebookSquare /></a></div>
           </div>
         </div>
     </div>

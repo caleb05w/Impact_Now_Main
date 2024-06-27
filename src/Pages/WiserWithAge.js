@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoArrowRight, GoArrowLeft } from 'react-icons/go'
+import { GoArrowLeft } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import bg from '../assets/WWA_bg.png'
 import { motion } from 'framer-motion'
@@ -24,7 +24,7 @@ transition={{
 
 >
 
-  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg}></img> </div>
+  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg} alt="background"></img> </div>
   
     <div className='lg:w-4/6 sm:w-full sm:mt-[8%] lg:mt-[2%] mx-auto'>
         <div className='mx-[10%] w-10/12'>

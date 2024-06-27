@@ -21,7 +21,7 @@ import { Link } from "react-router-dom"
 import { GoArrowRight } from "react-icons/go";
 import { GoArrowUpRight } from "react-icons/go";
 
-import EmailForm from '../Components/Email'
+// import EmailForm from '../Components/Email'
 import ScrollToTopButton from '../Components/ScrollTopButton';
 
 import { motion } from "framer-motion";
@@ -53,7 +53,7 @@ function Home() {
     <div className='overflow-hidden absolute w-full sm:min-h-lvh lg:h-[73%] z-10'>
       <div className='bg-black'>
         <div className='flex-row flex justify-center'>
-             <img className='object-cover w-full sm:min-h-[80vh] md:min-h-[100vh] lg:h-full opacity-40' src={Video}></img>
+             <img className='object-cover w-full sm:min-h-[80vh] md:min-h-[100vh] lg:h-full opacity-40' src={Video} alt="Background Video"></img>
         </div>
       </div>
       
@@ -67,7 +67,7 @@ function Home() {
       <div className='text-center mx-25 my-20  w-2/3 z-20'>
         <div className='flex justify-center'>  
           <div className='lg:h-[15%] lg:w-[15%] md:[h-15vw] md:w-[20vw] sm:h-[20vw] sm:w-[20vw]'>
-          <img className="w-full h-full object-cover" src={logo}></img>
+          <img className="w-full h-full object-cover" src={logo} alt="Logo"></img>
           </div>
          </div>
         <div className='lg:w-2/3 md:w-12/12 sm:w-10/12 mx-auto text-center z-10'>
@@ -113,7 +113,7 @@ function Home() {
           <div className=' lg:flex sm:flex-row lg:w-lvw sm:w-[95%] sm:mx-[2%] lg:mx-0  h-fit overflow-hidden lg:gap-[0.5%]'>
             <Link to='/celebraterecovery'>
             <div className=' group sm:w-lvw lg:w-[29vw] sm:h-[43vh] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
-              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={CR}></img>
+              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={CR} alt="Celebrate Recovery"></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Celebrate Recovery</h3></div>
                 
@@ -133,7 +133,7 @@ function Home() {
 
             <Link to='/MealsOnWheels'> 
             <div className='group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
-              <img className='object-cover -translate-x-[0.1%] w-[106%] h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={MOW}></img>
+              <img className='object-cover -translate-x-[0.1%] w-[106%] h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' alt="Meals on Wheels" src={MOW}></img>
               <div className='w-[96%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-4 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Meals on Wheels</h3></div>
 
@@ -158,7 +158,7 @@ function Home() {
             
             <Link to='/NepalShalomHouse'> 
             <div className=' group sm:w-lvw lg:w-[69vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%]  lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
-              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={NSH}></img>
+              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' alt="Nepal Shalom House" src={NSH}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Nepal Shalom House</h3></div>
                 
@@ -177,7 +177,7 @@ function Home() {
 
             <Link to='/WiserWithAge'> 
             <div className=' group sm:w-lvw lg:w-[29vw] sm:h-[43vh] sm:mt-[2%] lg:mt-[0%] lg:h-[50vh] bg-black overflow-hidden hover:cursor-pointer'>
-              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={WWA}></img>
+              <img className='object-cover w-full h-full group-hover:opacity-40 sm:opacity-40 lg:opacity-100 ease-in-out duration-[500ms] group-hover:scale-[1.07]' alt="Wiser With Age" src={WWA}></img>
               <div className='w-[99%] -translate-y-[110%] h-[90%] my-auto mx-auto'>
                 <div className='mobileHide translate-y-[150%] group-hover:translate-y-[60%] opacity-[0%] group-hover:opacity-[100%] translate-x-5 ease-in-out duration-300'><h3 className='text-white font-[500] text-[1.4vw]'>Wiser with Age</h3></div>
                 
@@ -240,7 +240,7 @@ function Home() {
             </div>
 
             <div className='sm:mt-[10%] lg:mt-0 h-fit lg:w-6/12 overflow-hidden'>
-            <img className='object-cover w-full h-[45lvh]' src={Team}></img>
+            <img className='object-cover w-full h-[45lvh]' alt="Pray together" src={Team}></img>
             </div>
 
           </div>
@@ -254,9 +254,9 @@ function Home() {
         </div>
 
        <div className='flex max-w-[100vw] h-[50lvh] gap-[0.5%] overflow-hidden'>
-          <img className='h-full w-full object-cover' src={Sl1}></img>
-          <img className='h-full w-full object-cover' src={Sl2}></img>
-          <img className='h-full w-full object-cover' src={Sl3}></img>
+          <img className='h-full w-full object-cover' alt="Greeting others" src={Sl1}></img>
+          <img className='h-full w-full object-cover' alt="Neighborhood Block Party Event" src={Sl2}></img>
+          <img className='h-full w-full object-cover' alt="BBQ" src={Sl3}></img>
         </div> 
 
         <div className='sm:w-full lg:w-6/6 mt-[7%] mx-auto'>
@@ -267,19 +267,19 @@ function Home() {
             <div class='grid grid-cols-3 mt-[10%] gap-[5%]'>
 
               <div className=''> 
-                <img src={compassion} className=''></img>
+                <img src={compassion} alt="Compassion Logo" className=''></img>
                 <h4 id='heavy' className='mt-[10%]'>Compassion</h4>
                 <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
               </div>
 
               <div className=''> 
-              <img src={build} className=''></img>
+              <img src={build} alt="Build Logo" className=''></img>
                 <h4 id='heavy' className='mt-[10%]' >Build</h4>
                 <h5 className='mt-[5%]'>We are committed to serve people, build new relationships, and reconcile the hurt and broken to their local and global communities.</h5>
                 </div>
 
               <div className=''> 
-              <img src={equip} className=''></img>
+              <img src={equip} alt="Equip Logo" className=''></img>
                 <h4 id='heavy'className='mt-[10%]'  >Equip</h4>
                 <h5 className='mt-[5%]'>We collaborate together to empower others to develop their full potentials, strengths, skills and help pursue their passions.
                 </h5>

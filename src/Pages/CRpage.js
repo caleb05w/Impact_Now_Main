@@ -28,7 +28,7 @@ transition={{
 
 >
 
-  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg}></img> </div>
+  <div className='w-lvw h-[25vw] lg:mt-0 sm:mt-[10%]'><img src={bg} alt="Background"></img> </div>
   
     <div className='lg:w-4/5 sm:w-full sm:mt-[5%] lg:mt-[2%] mx-auto'>
         <div className='mx-[10%] w-10/12'>
@@ -36,13 +36,13 @@ transition={{
             <h1 className='mt-[2%]'>A 12 Step Program for addressing hurts, hangups and habits.</h1>
             <h5 className='mt-[3%]'>Celebrate Recovery (CR) is a biblically-based, recovery program that addresses our Hurts, Hang- ups, and Habits using a 12-step approach based on the Beatitudes from the book of Matthew.</h5>
             
-            <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><h4 className='group-hover:text-white ease-in-out duration-300'><a href="https://www.celebraterecovery.ca/" target="_blank">Learn More</a></h4></button>
+            <button className='group mt-[5%] px-4 py-2.5 bg-none border-2 border-black rounded-full w-fit hover:bg-black hover:text-white'><h4 className='group-hover:text-white ease-in-out duration-300'><a href="https://www.celebraterecovery.ca/" target="_blank" rel="noreferrer">Learn More</a></h4></button>
         </div>
     </div>
 
     <div className=' mt-[5%] w-[100vw] h-[50vh] flex gap-[0.5%]'>
-        <img className='object-cover w-full h-full' src={CR1}></img>
-        <img className='object-cover w-full h-full' src={CR2}></img>    
+        <img className='object-cover w-full h-full' src={CR1} alt="See change in person"></img>
+        <img className='object-cover w-full h-full' src={CR2} alt="Building communities one at a time"></img>    
     </div>
 
     <div className='sm:w-full lg:w-4/5 mx-auto py-[6%]'>
@@ -63,8 +63,8 @@ transition={{
         </div>
 
         <div className='lg:ml-[8vw] sm:mx-auto mt-[8%] sm:w-full lg:w-[85vw] h-[50vh] flex sm:gap-0 lg:gap-[0.5%]'>
-            <img className='object-cover lg:w-[25vw] sm:w-[0vw] h-full' src={Nicholas1}></img> 
-            <img className='object-cover lg:w-[60vw] sm:w-[100vw] h-full' src={Nicholas}></img>     
+            <img className='object-cover lg:w-[25vw] sm:w-[0vw] h-full' src={Nicholas1} alt="Meet Nicholas"></img> 
+            <img className='object-cover lg:w-[60vw] sm:w-[100vw] h-full' src={Nicholas} alt="Meet Nicholas"></img>     
         </div>
 
         <div className='w-5/6 mt-[7%] mx-auto'>

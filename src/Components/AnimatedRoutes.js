@@ -19,7 +19,7 @@ import ShalomHouse from "../Pages/ShalomHouse.js";
 import WiserWithAge from "../Pages/WiserWithAge.js";
 import MealsOnWheels from "../Pages/MealsOnWheels.js";
 
-import testing from '../Pages/testing.js'
+
 
 function AnimatedRoutes() {
 

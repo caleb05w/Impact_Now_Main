@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import { AiOutlineCaretDown, AiOutlineCaretUp} from 'react-icons/ai';
 import Meeting from '../Components/Meeting';
 import { GoArrowUpRight } from 'react-icons/go';
 import { GoArrowDownRight } from 'react-icons/go';

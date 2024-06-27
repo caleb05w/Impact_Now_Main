@@ -5,7 +5,7 @@ import donate3 from '../assets/donate3.png'
 import donate4 from '../assets/donate4.png'
 import donate5 from '../assets/donate5.png'
 
-import { GoArrowRight, GoArrowLeft } from 'react-icons/go'
+import { GoArrowRight} from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -34,20 +34,15 @@ function Donate() {
      }}
      
      >
-    {/* <div class='absolute -z-index-10inset-0 w-full h-full bg-black opacity-70'> </div> */}
-     
-  
-        {/* <div className='w-full lg:h-min-[0vh] absolute -z-10 sm:min-h-lvh bg-black'>
-            <img className='sm:w-min-[100vw] sm:h-min-[100vh] sm:object-cover opacity-40' src={background}></img>
-        </div> */}
+
 
         <div className='w-full h-0 overflow-hidden pt-[5%]'>
             <h1> invisible element</h1>
         </div>
 
         <div className='mx-[1%] flex gap-[0.5%] h-[50vh] overflow-hidden'>
-            <img className='lg:w-[30vw] sm:w-[100vw] h-full object-cover' src={donate2}></img>
-            <img className='lg:w-[70vw] sm:w-[0] lg:h-full object-cover' src={donate1}></img>
+            <img className='lg:w-[30vw] sm:w-[100vw] h-full object-cover' alt="Our community thrives off your donations" src={donate2}></img>
+            <img className='lg:w-[70vw] sm:w-[0] lg:h-full object-cover' alt="Our community thrives off your donations"src={donate1}></img>
         </div>
 
         <div className='sm:w-full lg:w-6/6 sm:mt-[10%] lg:mt-[4%] mx-auto'>
@@ -64,7 +59,7 @@ function Donate() {
                 <h4 className='sm:mt-[1%] lg:mt-[5%]'>Donate online securely with a credit card through our online giving provider Sunergo</h4>
 
                 <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
-                    <button> <a href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank" ><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide' > Donate Now</h5></a></button>
+                    <button> <a href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank" rel="noreferrer"><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide' > Donate Now</h5></a></button>
                     <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
                     </div>
 
@@ -155,7 +150,7 @@ function Donate() {
               <h4 className='sm:mt-[1%] lg:mt-[5%]'>Donate online securely with a credit card through our online giving provider Sunergo</h4>
 
               <div className='flex lg:mt-[7%]  gap-[1%] mx-0 p-0 mobileHide'>
-                  <button> <a href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank" ><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide' > Donate Now</h5></a></button>
+                  <button> <a href="https://richmondbaptist.sunergo.net/qry/sr_donate.taf" target="_blank" rel="noreferrer" ><h5 className='m-0 p-0 gap-0 w-fit h-fit mobileHide' > Donate Now</h5></a></button>
                   <div className='my-auto mobileHide' style={{color: '#6b7280', fontSize:'1.1vw'}}><GoArrowRight /></div>
                   </div>
 
@@ -228,15 +223,15 @@ function Donate() {
             <div className='mx-[1%] flex py-[2%] w-[98%] sm:h-[30vh] lg:h-[50vh] gap-[0.5%] overflow-hidden'>
                
                 <div className=''>
-                <img className='sm:w-[100vw] lg:w-[30vw] h-full object-cover' src={donate3}></img>
+                <img className='sm:w-[100vw] lg:w-[30vw] h-full object-cover' alt="Our community events" src={donate3}></img>
                 </div>
 
                 <div className=''>
-                    <img className='sm:w-0 lg:w-[45vw] h-full object-cover' src={donate4}></img>
+                    <img className='sm:w-0 lg:w-[45vw] h-full object-cover' alt="Handing our freezees" src={donate4}></img>
                 </div>
 
                 <div className=''>
-                <img className='sm:w-0 lg:w-[25vw] h-full object-cover' src={donate5}></img>
+                <img className='sm:w-0 lg:w-[25vw] h-full object-cover' alt="Face painting" src={donate5}></img>
                 </div>
 
             </div>
