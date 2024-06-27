@@ -14,8 +14,8 @@ import { motion } from 'framer-motion';
 function Team() {
 
     const [currentCase, setCurrentCase] = useState(4);
-    const [setAnimate] = useState(false);
-    const [showContent ] = useState(true);
+    const [animate, setAnimate] = useState(false);
+    const [showContent, setShowContent ] = useState(true);
 
     const scrollToRef = (ref) => {
         if (ref.current) {
@@ -29,7 +29,7 @@ function Team() {
     const handleCase1 = () => {
         switchCase(1);
         scrollToRef(case1Ref)
-        // setShowContent(!showContent);
+        setShowContent(!showContent);
     }
     const handleCase2 = () => {
         switchCase(2);
@@ -123,7 +123,7 @@ function Team() {
           </div>
         </div>
 
-        <div className='mt-[8%] flex gmax-w-[100vw] h-[60lvh] gap-[0.5%] overflow-hidden'>
+        <div className='mt-[8%] flex gmax-w-[100vw] max-h-[60lvh] gap-[0.5%] overflow-hidden'>
 
           <div className=' group w-[full] bg-black overflow-hidden hover:cursor-pointer' onClick={handleCase1}>
               <img className='object-cover w-[33vw] h-full group-hover:opacity-40 ease-in-out duration-[500ms] group-hover:scale-[1.07]' src={Kamal} alt="Kamal"></img>
