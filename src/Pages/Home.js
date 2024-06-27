@@ -85,7 +85,7 @@ function Home() {
         {/* Projects */}
       <div className=''>
 
-      <div className='h-fit w-fit lg:pt-[12%] md:pt-[20%] sm:pt-[30%]'>
+      <div className='h-fit w-fit lg:pt-[10%] md:pt-[20%] sm:pt-[30%]'>
 
         <div className='sm:full lg:w-4/5 m-auto'>
           <div className='mx-[10%] lg:w-5/12 sm:full'>
