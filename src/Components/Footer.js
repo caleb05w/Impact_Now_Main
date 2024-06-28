@@ -72,7 +72,7 @@ function Footer() {
            @2024 IMPACT N.O.W Foundation
           <div className='flex translate-x-[-8vw]'>
           <div className='text-4xl'> <a href="https://www.instagram.com/impactnow_2024/" target="_blank" rel="noreferrer"><FaSquareInstagram /></a></div>
-          <div className='text-4xl'> <a href="https://www.facebook.com/groups/331238719786607" target="_blank" rel="noreferrer"><FaFacebookSquare /></a></div>
+          <div className='text-4xl'> <a href="https://www.facebook.com/groups/985567649938890" target="_blank" rel="noreferrer"><FaFacebookSquare /></a></div>
           </div>
         </div>
     </div>
